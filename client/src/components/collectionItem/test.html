@@ -1,0 +1,249 @@
+<section data-test="page-section" data-section-theme="black" class="page-section
+    
+      layout-engine-section
+    
+    background-width--full-bleed
+    
+      section-height--medium
+    
+    
+      content-width--medium
+    
+    horizontal-alignment--center
+    vertical-alignment--middle
+    
+       has-background
+    
+    
+    black" data-section-id="618461f84739fb59191ad04f" data-controller="SectionWrapperController" data-current-styles="{
+&quot;backgroundImage&quot;: {
+  &quot;id&quot;: &quot;6184620d856659790d727ecd&quot;,
+  &quot;recordType&quot;: 2,
+  &quot;addedOn&quot;: 1636065805326,
+  &quot;updatedOn&quot;: 1636074174641,
+  &quot;workflowState&quot;: 1,
+  &quot;publishOn&quot;: 1636065805326,
+  &quot;authorId&quot;: &quot;5eec9a31c6e20f0484446ccc&quot;,
+  &quot;systemDataId&quot;: &quot;9f7f77e3-9694-49a7-ad8e-c6c33051c9f9&quot;,
+  &quot;systemDataVariants&quot;: &quot;1256x628,100w,300w,500w,750w,1000w&quot;,
+  &quot;systemDataSourceType&quot;: &quot;JPG&quot;,
+  &quot;filename&quot;: &quot;bg4.jpg&quot;,
+  &quot;mediaFocalPoint&quot;: {
+    &quot;x&quot;: 0.5,
+    &quot;y&quot;: 0.5,
+    &quot;source&quot;: 3
+  },
+  &quot;colorData&quot;: {
+    &quot;topLeftAverage&quot;: &quot;2c2558&quot;,
+    &quot;topRightAverage&quot;: &quot;174166&quot;,
+    &quot;bottomLeftAverage&quot;: &quot;2f1e55&quot;,
+    &quot;bottomRightAverage&quot;: &quot;1d3e64&quot;,
+    &quot;centerAverage&quot;: &quot;4d5d68&quot;,
+    &quot;suggestedBgColor&quot;: &quot;324260&quot;
+  },
+  &quot;urlId&quot;: &quot;rcq1njj6lllpz5o6jvmrtfk6ofly86&quot;,
+  &quot;title&quot;: &quot;&quot;,
+  &quot;body&quot;: null,
+  &quot;likeCount&quot;: 0,
+  &quot;commentCount&quot;: 0,
+  &quot;publicCommentCount&quot;: 0,
+  &quot;commentState&quot;: 2,
+  &quot;unsaved&quot;: false,
+  &quot;author&quot;: {
+    &quot;id&quot;: &quot;5eec9a31c6e20f0484446ccc&quot;,
+    &quot;displayName&quot;: &quot;Jasulan&quot;,
+    &quot;firstName&quot;: &quot;Default&quot;,
+    &quot;lastName&quot;: &quot;Network&quot;,
+    &quot;avatarUrl&quot;: &quot;https://static1.squarespace.com/static/images/5eec9a3281e7f06a966700be&quot;,
+    &quot;bio&quot;: &quot;&quot;,
+    &quot;avatarAssetUrl&quot;: &quot;https://static1.squarespace.com/static/images/5eec9a3281e7f06a966700be&quot;
+  },
+  &quot;assetUrl&quot;: &quot;https://images.squarespace-cdn.com/content/v1/617173c2e542983559ce6958/9f7f77e3-9694-49a7-ad8e-c6c33051c9f9/bg4.jpg&quot;,
+  &quot;contentType&quot;: &quot;image/jpeg&quot;,
+  &quot;items&quot;: [ ],
+  &quot;pushedServices&quot;: { },
+  &quot;pendingPushedServices&quot;: { },
+  &quot;recordTypeLabel&quot;: &quot;image&quot;,
+  &quot;originalSize&quot;: &quot;1256x628&quot;
+},
+&quot;imageOverlayOpacity&quot;: 0.51,
+&quot;backgroundWidth&quot;: &quot;background-width--full-bleed&quot;,
+&quot;sectionHeight&quot;: &quot;section-height--medium&quot;,
+&quot;customSectionHeight&quot;: 85,
+&quot;horizontalAlignment&quot;: &quot;horizontal-alignment--center&quot;,
+&quot;verticalAlignment&quot;: &quot;vertical-alignment--middle&quot;,
+&quot;contentWidth&quot;: &quot;content-width--medium&quot;,
+&quot;sectionTheme&quot;: &quot;black&quot;,
+&quot;sectionAnimation&quot;: &quot;none&quot;,
+&quot;backgroundMode&quot;: &quot;image&quot;,
+&quot;imageEffect&quot;: &quot;liquid&quot;
+}" data-animation="none" style="padding-top: 125.562px;" data-controllers-bound="SectionWrapperController"
+    data-active="true">
+    <div class="section-background">
+
+
+
+
+
+
+
+
+
+        <script>
+            "use strict";
+
+            var positionImage = function positionImage(imageEl) {
+                var imageDimensions = imageEl.dataset.imageDimensions.split('x');
+                var originalWidth = imageDimensions[0];
+                var originalHeight = imageDimensions[1];
+                var focalPoint = imageEl.dataset.imageFocalPoint.split(',');
+                var focalPointX = focalPoint[0];
+                var focalPointY = focalPoint[1];
+                var parentNode = imageEl.parentNode;
+
+                var scale = function () {
+                    var imageRatio = originalWidth / originalHeight;
+                    var parentClientSize = {
+                        height: parentNode.clientHeight,
+                        width: parentNode.clientWidth
+                    };
+                    var parentRatio = parentClientSize.width / parentClientSize.height;
+
+                    if (imageRatio > parentRatio) {
+                        return parentClientSize.height / originalHeight;
+                    }
+
+                    return parentClientSize.width / originalWidth;
+                }();
+
+                var getRelativeOffset = function getRelativeOffset() {
+                    var targetWidth = Math.ceil(originalWidth * scale);
+                    var targetHeight = Math.ceil(originalHeight * scale);
+                    var parentDimensionWidth = parentNode.offsetWidth;
+                    var parentDimensionHeight = parentNode.offsetHeight;
+                    var overflowWidth = targetWidth - parentDimensionWidth;
+                    var overflowHeight = targetHeight - parentDimensionHeight;
+                    var valueX;
+
+                    if (overflowWidth === 0) {
+                        valueX = focalPointX;
+                    } else {
+                        valueX = Math.max(Math.min(targetWidth * focalPointX - parentDimensionWidth * 0.5, overflowWidth), 0) / overflowWidth;
+                    }
+
+                    var valueY;
+
+                    if (overflowHeight === 0) {
+                        valueY = focalPointY;
+                    } else {
+                        valueY = Math.max(Math.min(targetHeight * focalPointY - parentDimensionHeight * 0.5, overflowHeight), 0) / overflowHeight;
+                    }
+
+                    return {
+                        valueX: valueX,
+                        valueY: valueY
+                    };
+                };
+
+                var relativeOffset = getRelativeOffset();
+                var valueX = relativeOffset.valueX;
+                var valueY = relativeOffset.valueY;
+                imageEl.style.objectPosition = "".concat(valueX * 100, "% ").concat(valueY * 100, "%");
+            };
+        </script>
+
+
+
+
+
+
+
+
+        <div class="section-background-content" data-controller="BackgroundImageFXLiquid"
+            data-controllers-bound="BackgroundImageFXLiquid">
+            <img class="background-image-fx loaded" crossorigin="" alt=""
+                data-src="https://images.squarespace-cdn.com/content/v1/617173c2e542983559ce6958/9f7f77e3-9694-49a7-ad8e-c6c33051c9f9/bg4.jpg"
+                data-image="https://images.squarespace-cdn.com/content/v1/617173c2e542983559ce6958/9f7f77e3-9694-49a7-ad8e-c6c33051c9f9/bg4.jpg"
+                data-image-dimensions="1256x628" data-image-focal-point="0.5,0.5" data-load="false"
+                srcset="https://images.squarespace-cdn.com/content/v1/617173c2e542983559ce6958/9f7f77e3-9694-49a7-ad8e-c6c33051c9f9/bg4.jpg?format=100w 100w,https://images.squarespace-cdn.com/content/v1/617173c2e542983559ce6958/9f7f77e3-9694-49a7-ad8e-c6c33051c9f9/bg4.jpg?format=300w 300w,https://images.squarespace-cdn.com/content/v1/617173c2e542983559ce6958/9f7f77e3-9694-49a7-ad8e-c6c33051c9f9/bg4.jpg?format=500w 500w,https://images.squarespace-cdn.com/content/v1/617173c2e542983559ce6958/9f7f77e3-9694-49a7-ad8e-c6c33051c9f9/bg4.jpg?format=750w 750w,https://images.squarespace-cdn.com/content/v1/617173c2e542983559ce6958/9f7f77e3-9694-49a7-ad8e-c6c33051c9f9/bg4.jpg?format=1000w 1000w,https://images.squarespace-cdn.com/content/v1/617173c2e542983559ce6958/9f7f77e3-9694-49a7-ad8e-c6c33051c9f9/bg4.jpg?format=original 1500w"
+                sizes="(max-width: 799px) 200vw, 100vw" onload="positionImage(this); this.classList.add('loaded');"
+                style="object-position: 50% 50%; visibility: hidden; width: 100%; height: 100%; object-fit: cover;"
+                data-parent-ratio="0.7" data-image-resolution="original">
+
+            <div class="section-background-canvas background-fx-canvas"><canvas width="780" height="1053"
+                    style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"></canvas></div>
+        </div>
+
+
+
+
+
+
+        <div class="section-background-overlay" style="opacity: 0.51;"></div>
+
+
+    </div>
+    <div class="content-wrapper" style="
+      
+        
+      
+    ">
+        <div class="content">
+
+
+
+
+
+
+            <div class="sqs-layout sqs-grid-12 columns-12" data-type="page-section"
+                id="page-section-618461f84739fb59191ad04f">
+                <div class="row sqs-row">
+                    <div class="col sqs-col-12 span-12">
+                        <div class="sqs-block html-block sqs-block-html" data-block-type="2"
+                            id="block-fdad3089a09f0f097997">
+                            <div class="sqs-block-content">
+                                <h2 style="text-align: center; white-space: pre-wrap; transition-timing-function: ease; transition-duration: 0.8s; transition-delay: 0.0888889s;"
+                                    class="preSlide slideIn">GeekPandaz</h2>
+                                <h3 style="text-align: center; white-space: pre-wrap; transition-timing-function: ease; transition-duration: 0.8s; transition-delay: 0.0944444s;"
+                                    class="preSlide slideIn">Genesis Mint: November 11 2021</h3>
+                                <p style="text-align: center; white-space: pre-wrap; transition-timing-function: ease; transition-duration: 0.8s; transition-delay: 0.1s;"
+                                    class="preFade fadeIn">The GeekPandaz are a Genesis collection of <strong>1,500
+                                        unique NFTs</strong> on Immutable X, a Layer-2 Ethereum solution that offers
+                                    <strong>gas-free minting &amp; trading. </strong></p>
+                                <p style="text-align: center; white-space: pre-wrap; transition-timing-function: ease; transition-duration: 0.8s; transition-delay: 0.105556s;"
+                                    class="preFade fadeIn">Each Panda is a sight to behold - thoughtfully designed,
+                                    loaded with accessories, and <strong>ready to take over the Pandaria
+                                        universe</strong></p>
+                            </div>
+                        </div>
+                        <div class="sqs-block button-block sqs-block-button" data-block-type="53"
+                            id="block-yui_3_17_2_1_1636647245600_3594">
+                            <div class="sqs-block-content" id="yui_3_17_2_1_1638473691603_381">
+
+                                <div class="sqs-block-button-container--center preSlide slideIn"
+                                    data-animation-role="button" data-alignment="center" data-button-size="medium"
+                                    data-button-type="primary" id="yui_3_17_2_1_1638473691603_380"
+                                    style="transition-timing-function: ease; transition-duration: 0.8s; transition-delay: 0.111111s;">
+                                    <a href="https://discord.com/invite/RJ6J8x82UQ"
+                                        class="sqs-block-button-element--medium sqs-button-element--primary sqs-block-button-element"
+                                        target="_blank" data-initialized="true">
+                                        SOLD OUT
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sqs-block code-block sqs-block-code" data-block-type="23"
+                            id="block-yui_3_17_2_1_1636072524723_4282">
+                            <div class="sqs-block-content">
+                                <div id="about">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
