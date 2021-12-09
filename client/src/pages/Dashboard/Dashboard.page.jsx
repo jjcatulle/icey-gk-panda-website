@@ -83,10 +83,11 @@ const DashBoard = () => {
               const client = await ImmutableXClient.build({
                 publicApiUrl: NETLINK,
               });
-
               const { address, starkPublicKey } = await link.setup({});
               const response = await fetch("/api?user=" + address);
-              const data = await response.json();
+              let data = await response.text();
+              console.log(data);
+              data = JSON.parse(data);
               if (address && data) {
                 dispatch(
                   setUserData({
