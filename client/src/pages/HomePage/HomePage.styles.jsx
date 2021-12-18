@@ -26,12 +26,12 @@ export const AppBarCtn = styled.div`
       font-family: "ZCOOL XiaoWei", serif;
     }
 
-    .button{
-      background:white;
-      padding:5px;
-      font-size:20px;
-      border-radius:10px;
-      cursor:pointer;
+    .button {
+      background: white;
+      padding: 5px;
+      font-size: 20px;
+      border-radius: 10px;
+      cursor: pointer;
     }
   }
 
@@ -350,7 +350,8 @@ export const TeamCtn = styled.div`
     rgba(17, 17, 17, 1),
     rgba(17, 17, 17, 0.75)
   );
-  padding-top: 80px;
+  padding-top: 100px;
+  padding-bottom: 80px;
   width: 100vw;
   color: white;
   .title {
@@ -392,4 +393,17 @@ export const StyledNode = styled.div`
     color:#b22c00;
     padding:10px;
   }
+`;
+
+export const FooterCtn = styled.div`
+  width: 100vw;
+  height: 100px;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(17, 17, 17, .9),
+    rgba(17, 17, 17, 1)
+  );
+  display: flex;
+  color: white;
+  font-size: 16px;
 `;

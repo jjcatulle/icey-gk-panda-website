@@ -122,13 +122,22 @@ export const DashboardWelcome = styled.div`
 `;
 
 export const CollectionGridCtn = styled.div`
-  // background: "#161616";
+  // background: red;
   display: grid;
+  height: 90vh;
   grid-template-columns: repeat(auto-fill, minmax(200px, 2fr));
   grid-gap: 1rem;
   padding: 0 30px;
   padding-top: 30px;
+  overflow: auto;
   @media only screen and (max-width: 800px) {
     padding: 0;
   }
+`;
+
+export const PopUPCtn = styled.div`
+  width: 100vw;
+  height: 100vh;
+  filter: blur(8px);
+  background:red;
 `;

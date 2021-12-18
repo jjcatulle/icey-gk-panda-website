@@ -14,14 +14,11 @@ export const CollectionItemCtn = styled.div`
 
   border: 2px solid #b22c00;
   border-radius: 10px;
+  padding-bottom:7px;
 
   &:hover {
     border: 3.5px solid #b22c00;
     cursor: pointer;
-    .header,
-    .details {
-      background: grey;
-    }
   }
 
   img {

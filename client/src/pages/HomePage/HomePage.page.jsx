@@ -17,12 +17,13 @@ import {
   FaqItemCtn,
   TeamCtn,
   StyledNode,
+  FooterCtn,
 } from "./HomePage.styles";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { Tree, TreeNode } from "react-organizational-chart";
 import { useMediaQuery } from "react-responsive";
 import { useNavigate } from "react-router-dom";
-
+import FavoriteIcon from "@mui/icons-material/Favorite";
 // import "animate.css/animate.min.css";
 import ScrollAnimation from "react-animate-on-scroll";
 import Timeline from "@mui/lab/Timeline";
@@ -31,6 +32,7 @@ import TimelineSeparator from "@mui/lab/TimelineSeparator";
 import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineDot from "@mui/lab/TimelineDot";
+import TwitterIcon from "@mui/icons-material/Twitter";
 
 function ColorsTimeline() {
   const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" });
@@ -51,26 +53,45 @@ function ColorsTimeline() {
         <TimelineContent>
           <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" duration={3}>
             <TimeLineItemCtn>
-              <div className="mytitle">October 2021: Genesis Minting</div>
+              <div className="mytitle">December 2021</div>
               <ul>
                 <li>
-                  1,500 Genesis GeekPandaz, with over 120 unique traits, enter
-                  the Universe.
+                  New Project Lead: Chen transferred ownership to FISHMARKET.
+                  The new lead has built his own dedicated team and a new
+                  promising vision to the Geek Pandaz!
                 </li>
                 <li>
-                  Whitelisted members will be able to mint their GeekPandaz over
-                  a 24-hour gas-free presale, launched at 3 pm EST on Thursday
-                  the 11th of November 2021.
+                  DAO: The Pandaria Council DAO formulates to give every holder
+                  a voice in the project’s direction!
                 </li>
                 <li>
-                  The public mint will launch at 3 pm EST on Friday the 12th of
-                  November 2021.
+                  New Website: The website receives a facelift as a new era in
+                  Pandaria begins! The accompanying interactive dashboard will
+                  become available as well.
                 </li>
                 <li>
-                  We will simultaneously airdrop a 1-of-1 unique Legendary
-                  GeekPandaz to one of our early adopters. The remaining 6
-                  Legendaries will be distributed to the community at a later
-                  date.
+                  Staking: JC, the Head Developer, is putting in overtime for
+                  the Pandaz: the $GEEK token is coming to life! The development
+                  of the staking mechanism is close to completion, and it will
+                  be integrated into the dashboard, which will include future
+                  drops and GeekPandaz-exclusive merchandise.
+                </li>
+                <li>
+                  OpenSea Integration: The test run integration from IMX to the
+                  ETH mainnet has been successful! We are working on gaining
+                  access to the metadata from the previous developer,
+                  Kotnascher, to finalize the process.
+                </li>
+                <li>
+                   Christmas Miracle(s): One lucky Panda holder will be
+                  airdropped a LEGENDARY PANDA! A second legendary will also be
+                  Dutch auctioned on Open Sea with the Geek Pandaz join
+                </li>
+                <li>
+                   All Panda holders get an interesting surprise…a free Jolly
+                  Panda! 800 Jolly Pandas join the Geek Pandas to celebrate a
+                  successful OpenSea integration! That is all the information we
+                  are allowed to give away for now…
                 </li>
               </ul>
             </TimeLineItemCtn>
@@ -96,25 +117,39 @@ function ColorsTimeline() {
               duration={3}
             >
               <TimeLineItemCtn>
-                <div className="mytitle">Q4 2021: GeekPandaz Honeymoon</div>
+                <div className="mytitle">January 2022</div>
                 <ul
                 // dir="rtl"
                 >
                   <li>
-                    GeekPandaz will launch the first incubator and launchpad for
-                    NFT blockchain games on IMX.
+                    Expansion: The team aims to use this time to work on
+                    partnerships and collaborations to grow and strengthen the
+                    community. This includes other IMX projects like Foreign
+                    Fuels, Pixel Degens and IMX Squirrels.
                   </li>
                   <li>
-                    GeekPandaz will be migrated to a new contract, bringing new
-                    features like breeding, renaming, and the ability to write
-                    custom biographies.
+                    Private Gaming Ecosystem: We will begin to implement twitch
+                    influencers into our gameplan: Panda holders will have
+                    access to twitch rewards for watching GeekPandaz-sponsored
+                    content creators!
                   </li>
                   <li>
-                    GeekPandaz will receive their own staking platform, earning
-                    $BAMBOO tokens (ERC20) that will be listed on a
-                    decentralized exchange. A proportion of the minting proceeds
-                    from GeekPandaz will be used to provide liquidity to this
-                    token.
+                    Verified GeekPandaz holders will gain access to
+                    collaborations and partnerships for watching Geekpandaz
+                    streamers! We will have many surprises in store to support
+                    our gaming community!
+                  </li>
+                  <li>
+                    Launchpad: There will be projects launching off of
+                    GeekPandaz website. GeekPandaz holders will be given
+                    whitelist spots and other potential perks for staking their
+                    panda and verifying on the website.
+                  </li>
+                  <li>
+                    Community Wallet: A MetaPandaz Community Chest will be
+                    opened and seeded with ETH. Holders will be able to vote to
+                    launch experiences, activations, and campaigns that benefit
+                    the entire Pandaz ecosystem.
                   </li>
                 </ul>
               </TimeLineItemCtn>
@@ -141,27 +176,56 @@ function ColorsTimeline() {
               duration={3}
             >
               <TimeLineItemCtn>
-                <div className="mytitle">Q1 2022: Ecosystem Expansion</div>
+                <div className="mytitle">February 2022</div>
                 <ul
                 // dir="rtl"
                 >
                   <li>
+                    Community Games: GeekPandaz will host regular tournaments
+                    for holders to compete in AAA games and there will be
+                    massive prize pools of $GEEK up for grabs! Livestream
+                    tournaments will allow viewers to earn additional $GEEK!
+                  </li>
+                </ul>
+              </TimeLineItemCtn>
+            </ScrollAnimation>
+          </TimelineContent>
+        </TimelineContent>
+      </TimelineItem>
+      <TimelineItem>
+        <TimelineSeparator>
+          <TimelineDot
+            style={{
+              background: "#b22c00",
+              width: "20px",
+              height: "20px",
+            }}
+          />
+          <TimelineConnector />
+        </TimelineSeparator>
+        <TimelineContent>
+          <TimelineContent>
+            <ScrollAnimation
+              animateIn="fadeIn"
+              animateOut="fadeOut"
+              duration={3}
+            >
+              <TimeLineItemCtn>
+                <div className="mytitle">March 2022</div>
+                <ul
+                // dir="rtl"
+                >
+                  <li>
+                    New Collection: There will be a new generation of GeekPandaz
+                    on OpensSea
+                  </li>
+                  <li>
                     Breeding: It’s time for the mating season! GeekPandaz
-                    holders will be able to use their $BAMBOO tokens to produce
-                    a unique baby MetaPanda. The GeekPandaz team will release an
-                    additional supply of MetaPandaz for the public to mint,
-                    allowing new members to join our community.
-                  </li>
-                  <li>
-                    A MetaPandaz Community Chest will be opened and seeded with
-                    ETH. Holders will be able to vote to launch experiences,
-                    activations, and campaigns that benefit the entire Pandaz
-                    ecosystem.
-                  </li>
-                  <li>
-                    GeekPandaz will host regular tournaments for holders on
-                    top-tier games, offering huge prize pools to the best gamers
-                    in Pandaria.
+                    holders can utilize their $GEEK tokens and burn one of their
+                    GeekPandaz (with the requirement of having at least 2) to
+                    produce a unique baby MetaPanda. The GeekPandaz team will
+                    release an additional supply of MetaPandaz for the public to
+                    mint, allowing new members to join our community.
                   </li>
                 </ul>
               </TimeLineItemCtn>
@@ -187,24 +251,18 @@ function ColorsTimeline() {
               duration={3}
             >
               <TimeLineItemCtn>
-                <div className="mytitle">Q2 2022: Entering the Metaverse</div>
+                <div className="mytitle">April 2022</div>
                 <ul
                 // dir="rtl"
                 >
                   <li>
-                    GeekPandaz will target a partnership with The Sandbox to
-                    launch GeekPandaz VX, a series of playable voxel-based
-                    avatars for the metaverse.
+                    $GEEK will be able to be used to level up your Gen 2 Pandaz.
+                    With a unique Tier system to unlock special features of your
+                    Pandaz.
                   </li>
                   <li>
-                    The Bamboo Shop will be launched. Inside, Pandaz can
-                    purchase custom equipment and wearables for the GeekPandaz
-                    VX metaverse avatars.
-                  </li>
-                  <li>
-                    Our team will leverage their passion for crypto gaming to
-                    develop multiple P2E arcades for holders with playable NFTs.
-                    Bamboo tokens will be used as the in-game currency.
+                    There will be much more in the future. Stay tuned for
+                    updates on the roadmap!
                   </li>
                 </ul>
               </TimeLineItemCtn>
@@ -343,7 +401,7 @@ const HomePage = () => {
       } else {
         setslide({ ...slide, slideIndex: 0 });
       }
-    }, 700);
+    }, 1000);
   }, []);
 
   const toggleMuteBtn = () => {
@@ -444,7 +502,7 @@ const HomePage = () => {
             </div>
           </TimeLineCtn>
           <FaqsCtn>
-            <div className="title">Faq</div>
+            <div className="title">FAQ</div>
             <div className="items">
               <FaqItem
                 label="Who are the GeekPandaz?"
@@ -473,42 +531,71 @@ The GeekPandaz team has built an exciting long-term roadmap. A few highlights in
             <div className="items">
               <StyledNode>
                 <img
-                  src="https://cdn.discordapp.com/avatars/889030251584323664/f1fbef0cdb677a51b9d1bf90a559564d.webp"
+                  src="https://media.discordapp.net/attachments/915127960003035166/916108947184816138/blood_panda.png?width=1138&height=1138"
                   alt=""
                   srcset=""
                 />
-                <div className="name">FISH</div>
-                <div className="role">Founder</div>
-              </StyledNode>{" "}
+                <div className="name">Fish</div>
+                <div className="role">Project Lead</div>
+                <div className="role">
+                  <TwitterIcon />
+                </div>
+              </StyledNode>
               <StyledNode>
                 <img
-                  src="https://cdn.discordapp.com/avatars/889030251584323664/f1fbef0cdb677a51b9d1bf90a559564d.webp"
-                  alt=""
-                  srcset=""
-                />
-                <div className="name">MONTY</div>
-                <div className="role">Founder</div>
-              </StyledNode>{" "}
-              <StyledNode>
-                <img
-                  src="https://cdn.discordapp.com/avatars/889030251584323664/f1fbef0cdb677a51b9d1bf90a559564d.webp"
-                  alt=""
-                  srcset=""
-                />
-                <div className="name">JAKES</div>
-                <div className="role">Founder</div>
-              </StyledNode>{" "}
-              <StyledNode>
-                <img
-                  src="https://cdn.discordapp.com/avatars/889030251584323664/f1fbef0cdb677a51b9d1bf90a559564d.webp"
+                  src="https://bafkreieyj2v66i6bwnbtj5nztsz3lw7tg4horj3uwkamplmmzi5iegaqnu.ipfs.dweb.link/"
                   alt=""
                   srcset=""
                 />
                 <div className="name">JC</div>
-                <div className="role">Founder</div>
-              </StyledNode>{" "}
+                <div className="role">Developer</div>
+                <div className="role">
+                  <TwitterIcon />
+                </div>
+              </StyledNode>
+              <StyledNode>
+                <img
+                  src="https://bafkreicvxrmua5elgo5f5swbv2j2mv53ct25peielzfvs5wbd52gtrfdoe.ipfs.dweb.link/"
+                  alt=""
+                  srcset=""
+                />
+                <div className="name">OG</div>
+                <div className="role">Management Lead</div>
+                <div className="role">
+                  <TwitterIcon />
+                </div>
+              </StyledNode>
+              <StyledNode>
+                <img
+                  src="https://bafkreiaol6xc4sr5bwdgwqoxeroczgwdvuan4snjiniqxvh4dav3gfm4sm.ipfs.dweb.link/"
+                  alt=""
+                  srcset=""
+                />
+                <div className="name">Jake aka YOLO</div>
+                <div className="role">Communications</div>
+                <div className="role">
+                  <TwitterIcon />
+                </div>
+              </StyledNode>
+              <StyledNode>
+                <img
+                  src="https://bafkreig2xiowokslu7fgrx2jld6sgmfu7a64hxhoshn2rjrtsllfg4ufjq.ipfs.dweb.link/"
+                  alt=""
+                  srcset=""
+                />
+                <div className="name">Jake</div>
+                <div className="role">Marketing Lead</div>
+                <div className="role">
+                  <TwitterIcon />
+                </div>
+              </StyledNode>
             </div>
           </TeamCtn>
+          <FooterCtn>
+            <div style={{ margin: "auto" }}>
+              Made with <FavoriteIcon /> by JC
+            </div>
+          </FooterCtn>
         </Top>
       </LandingCtn>
     </HomePageCtn>
