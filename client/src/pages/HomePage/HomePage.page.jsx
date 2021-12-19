@@ -273,6 +273,142 @@ function ColorsTimeline() {
     </Timeline>
   );
 }
+
+function MobileColorsTimeline() {
+  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" });
+
+  return (
+    <>
+      <TimeLineItemCtn>
+        <div className="mytitle">December 2021</div>
+        <ul>
+          <li>
+            New Project Lead: Chen transferred ownership to FISHMARKET. The new
+            lead has built his own dedicated team and a new promising vision to
+            the Geek Pandaz!
+          </li>
+          <li>
+            DAO: The Pandaria Council DAO formulates to give every holder a
+            voice in the project’s direction!
+          </li>
+          <li>
+            New Website: The website receives a facelift as a new era in
+            Pandaria begins! The accompanying interactive dashboard will become
+            available as well.
+          </li>
+          <li>
+            Staking: JC, the Head Developer, is putting in overtime for the
+            Pandaz: the $GEEK token is coming to life! The development of the
+            staking mechanism is close to completion, and it will be integrated
+            into the dashboard, which will include future drops and
+            GeekPandaz-exclusive merchandise.
+          </li>
+          <li>
+            OpenSea Integration: The test run integration from IMX to the ETH
+            mainnet has been successful! We are working on gaining access to the
+            metadata from the previous developer, Kotnascher, to finalize the
+            process.
+          </li>
+          <li>
+             Christmas Miracle(s): One lucky Panda holder will be airdropped a
+            LEGENDARY PANDA! A second legendary will also be Dutch auctioned on
+            Open Sea with the Geek Pandaz join
+          </li>
+          <li>
+             All Panda holders get an interesting surprise…a free Jolly Panda!
+            800 Jolly Pandas join the Geek Pandas to celebrate a successful
+            OpenSea integration! That is all the information we are allowed to
+            give away for now…
+          </li>
+        </ul>
+      </TimeLineItemCtn>
+
+      <TimeLineItemCtn>
+        <div className="mytitle">January 2022</div>
+        <ul
+        // dir="rtl"
+        >
+          <li>
+            Expansion: The team aims to use this time to work on partnerships
+            and collaborations to grow and strengthen the community. This
+            includes other IMX projects like Foreign Fuels, Pixel Degens and IMX
+            Squirrels.
+          </li>
+          <li>
+            Private Gaming Ecosystem: We will begin to implement twitch
+            influencers into our gameplan: Panda holders will have access to
+            twitch rewards for watching GeekPandaz-sponsored content creators!
+          </li>
+          <li>
+            Verified GeekPandaz holders will gain access to collaborations and
+            partnerships for watching Geekpandaz streamers! We will have many
+            surprises in store to support our gaming community!
+          </li>
+          <li>
+            Launchpad: There will be projects launching off of GeekPandaz
+            website. GeekPandaz holders will be given whitelist spots and other
+            potential perks for staking their panda and verifying on the
+            website.
+          </li>
+          <li>
+            Community Wallet: A MetaPandaz Community Chest will be opened and
+            seeded with ETH. Holders will be able to vote to launch experiences,
+            activations, and campaigns that benefit the entire Pandaz ecosystem.
+          </li>
+        </ul>
+      </TimeLineItemCtn>
+      <TimeLineItemCtn>
+        <div className="mytitle">February 2022</div>
+        <ul
+        // dir="rtl"
+        >
+          <li>
+            Community Games: GeekPandaz will host regular tournaments for
+            holders to compete in AAA games and there will be massive prize
+            pools of $GEEK up for grabs! Livestream tournaments will allow
+            viewers to earn additional $GEEK!
+          </li>
+        </ul>
+      </TimeLineItemCtn>
+
+      <TimeLineItemCtn>
+        <div className="mytitle">March 2022</div>
+        <ul
+        // dir="rtl"
+        >
+          <li>
+            New Collection: There will be a new generation of GeekPandaz on
+            OpensSea
+          </li>
+          <li>
+            Breeding: It’s time for the mating season! GeekPandaz holders can
+            utilize their $GEEK tokens and burn one of their GeekPandaz (with
+            the requirement of having at least 2) to produce a unique baby
+            MetaPanda. The GeekPandaz team will release an additional supply of
+            MetaPandaz for the public to mint, allowing new members to join our
+            community.
+          </li>
+        </ul>
+      </TimeLineItemCtn>
+
+      <TimeLineItemCtn>
+        <div className="mytitle">April 2022</div>
+        <ul
+        // dir="rtl"
+        >
+          <li>
+            $GEEK will be able to be used to level up your Gen 2 Pandaz. With a
+            unique Tier system to unlock special features of your Pandaz.
+          </li>
+          <li>
+            There will be much more in the future. Stay tuned for updates on the
+            roadmap!
+          </li>
+        </ul>
+      </TimeLineItemCtn>
+    </>
+  );
+}
 const FaqItem = ({ label = "", text = "" }) => {
   const [show, setshow] = useState(false);
   return (
@@ -294,84 +430,7 @@ const FaqItem = ({ label = "", text = "" }) => {
   );
 };
 
-const StyledTreeExample = () => (
-  <Tree
-    lineWidth={"2px"}
-    lineColor={"white"}
-    lineBorderRadius={"10px"}
-    label={
-      <div style={{ display: "flex", justifyContent: "space-evenly" }}>
-        <StyledNode>
-          <img
-            src="https://cdn.discordapp.com/avatars/889030251584323664/f1fbef0cdb677a51b9d1bf90a559564d.webp"
-            alt=""
-            srcset=""
-          />
-          <div className="name">Chen</div>
-          <div className="role">Founder</div>
-        </StyledNode>
-        <div style={{ width: "20px" }} className="div"></div>
-        <StyledNode>
-          <StyledNode>
-            <img
-              src="https://cdn.discordapp.com/avatars/889030251584323664/f1fbef0cdb677a51b9d1bf90a559564d.webp"
-              alt=""
-              srcset=""
-            />
-            <div className="name">Chen</div>
-            <div className="role">Founder</div>
-          </StyledNode>
-        </StyledNode>
-      </div>
-    }
-  >
-    <TreeNode
-      label={
-        <StyledNode>
-          {" "}
-          <img
-            src="https://cdn.discordapp.com/avatars/889030251584323664/f1fbef0cdb677a51b9d1bf90a559564d.webp"
-            alt=""
-            srcset=""
-          />
-          <div className="name">Chen</div>
-          <div className="role">Founder</div>
-        </StyledNode>
-      }
-    >
-      <TreeNode label={<StyledNode>Marketing</StyledNode>}>
-        <TreeNode
-          label={
-            <StyledNode>
-              {" "}
-              <img
-                src="https://cdn.discordapp.com/avatars/889030251584323664/f1fbef0cdb677a51b9d1bf90a559564d.webp"
-                alt=""
-                srcset=""
-              />
-              <div className="name">Chen</div>
-            </StyledNode>
-          }
-        />
-        <TreeNode
-          label={
-            <StyledNode>
-              {" "}
-              <img
-                src="https://cdn.discordapp.com/avatars/889030251584323664/f1fbef0cdb677a51b9d1bf90a559564d.webp"
-                alt=""
-                srcset=""
-              />
-              <div className="name">Chen</div>
-            </StyledNode>
-          }
-        />
-      </TreeNode>
-      <TreeNode label={<StyledNode>Management</StyledNode>} />
-      <TreeNode label={<StyledNode>Dev</StyledNode>} />
-    </TreeNode>
-  </Tree>
-);
+
 const HomePage = () => {
   const navigate = useNavigate();
 
@@ -496,8 +555,11 @@ const HomePage = () => {
           <TimeLineCtn>
             <div className="items">
               <div className="title">ROADMAP 1.0</div>
-              <div className="content">
+              <div className="desktop">
                 <ColorsTimeline />
+              </div>
+              <div className="mobile">
+                <MobileColorsTimeline />
               </div>
             </div>
           </TimeLineCtn>
@@ -569,6 +631,11 @@ Immutable have partnered with TikTok, Veve and Opensea. You can find out more ab
                 <div className="name">Jake aka YOLO</div>
                 <div className="role">Communications</div>
                 <div className="role">
+                  <a
+                    href="https://twitter.com/JakeYoloxD"
+                  >
+                    <TwitterIcon style={{ cursor: "pointer" }} />
+                  </a>
                   {/* <TwitterIcon style={{ cursor: "pointer" }} /> */}
                 </div>
               </StyledNode>

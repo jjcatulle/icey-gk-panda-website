@@ -10,9 +10,7 @@ export const AppBarCtn = styled.div`
   justify-content: flex-end;
   position: fixed;
   z-index: 10000000000;
-  @media screen and (max-width: 800px) {
-    justify-content: center;
-  }
+
   .contents {
     display: flex;
     justify-content: space-around;
@@ -37,6 +35,9 @@ export const AppBarCtn = styled.div`
 
   @media screen and (max-width: 800px) {
     justify-content: center;
+    .contents {
+      margin-right: 0px;
+    }
   }
 `;
 
@@ -201,28 +202,34 @@ export const AboutCtn = styled.div`
   }
 
   @media screen and (max-width: 800px) {
+    overflow: hidden;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
     .about-info,
     .about-image {
       width: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+      // display: flex;
+      // flex-direction: column;
+      // justify-content: center;
     }
 
     .about-info {
       font-size: 14px;
-      align-items: center;
+      padding-right: 0px;
       .content {
-        text-align: center;
-        width: 90%;
-        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+          text-align: center;
+          width: 90%;
+          margin: auto;
       }
     }
     .about-image {
       padding-top: 20px;
       img {
-        //   margin: 0 auto;
         width: 70vw;
         height: auto;
         object-fit: cover;
@@ -254,7 +261,7 @@ export const TimeLineCtn = styled.div`
       color: #b22c00;
       text-align: center;
     }
-    .content {
+    .desktop {
       flex: 1;
       .description {
         font-size: 46px;
@@ -262,11 +269,24 @@ export const TimeLineCtn = styled.div`
 
       //   background:red;
     }
+
+    .mobile {
+      display: none;
+    }
   }
 
   @media screen and (max-width: 800px) {
     .items {
       width: 95vw;
+
+      .desktop {
+        display: none;
+      }
+
+      .mobile{
+        display:flex;
+        flex-direction:column;
+      }
     }
   }
 `;
@@ -291,6 +311,9 @@ export const TimeLineItemCtn = styled.div`
   }
 
   @media screen and (max-width: 800px) {
+    padding: 5px;
+    border: 1px solid #ae2e07;
+    margin-top:20px;
     .mytitle {
       font-size: 20px;
       font-weight: 700;
