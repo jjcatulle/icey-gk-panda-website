@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Typewriter from "typewriter-effect";
 
-import promoVideo from "../../assets/video/twitter.mp4";
+import promoVideo from "../../assets/video/GP.mp4";
 import { Bottom, Top } from "../../global.styles";
 import {
   HomePageCtn,

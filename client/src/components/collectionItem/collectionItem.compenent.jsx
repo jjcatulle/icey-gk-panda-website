@@ -41,6 +41,7 @@ const CollectionItem = ({ data }) => {
       <CollectionItemCtn
         onClick={async () => {
           // openPopUp(data);
+          return
           handleClickOpen();
           console.log(data);
           // return
