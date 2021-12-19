@@ -290,6 +290,18 @@ export const TimeLineItemCtn = styled.div`
     font-weight: 700;
     font-size: 20px;
   }
+
+  @media screen and (max-width: 800px) {
+    .mytitle {
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    ul {
+      font-weight: 700;
+      font-size: 15px;
+    }
+  }
 `;
 
 export const FaqsCtn = styled.div`
@@ -393,6 +405,10 @@ export const StyledNode = styled.div`
     color:#b22c00;
     padding:10px;
   }
+
+    @media screen and (max-width: 800px) {
+      margin-bottom:15px;
+    }
 `;
 
 export const FooterCtn = styled.div`

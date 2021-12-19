@@ -514,15 +514,6 @@ const HomePage = () => {
 
 Immutable have partnered with TikTok, Veve and Opensea. You can find out more about their platform here: https://www.immutable.com/ and here: https://immutablex.medium.com/.'
               />
-              <FaqItem
-                label="What are the future utiities of the Project?"
-                text="
-The GeekPandaz team has built an exciting long-term roadmap. A few highlights include An incubator and launchpad for NFT blockchain games on IMX
-,GeekPandaz will receive their own staking platform, earning $BAMBOO tokens (ERC20) that will be listed on a decentralized exchange
-,GeekPandaz holders will be able to use their $BAMBOO tokens to breed their NFTs, producing unique baby MetaPandaz
-,GeekPandaz VX, a series of playable voxel-based avatars for The Sandbox metaverse
-,and The Bamboo Shop, in which Pandaz can purchase custom equipment and wearables for the GeekPandaz VX metaverse avatars."
-              />
             </div>
           </FaqsCtn>
 
@@ -531,14 +522,16 @@ The GeekPandaz team has built an exciting long-term roadmap. A few highlights in
             <div className="items">
               <StyledNode>
                 <img
-                  src="https://media.discordapp.net/attachments/915127960003035166/916108947184816138/blood_panda.png?width=1138&height=1138"
+                  src="https://media.discordapp.net/attachments/920896258913206313/921876854997139456/download_2.png"
                   alt=""
                   srcset=""
                 />
                 <div className="name">Fish</div>
                 <div className="role">Project Lead</div>
                 <div className="role">
-                  <TwitterIcon />
+                  <a href="https://twitter.com/Fishychicken5">
+                    <TwitterIcon style={{ cursor: "pointer" }} />
+                  </a>
                 </div>
               </StyledNode>
               <StyledNode>
@@ -550,7 +543,9 @@ The GeekPandaz team has built an exciting long-term roadmap. A few highlights in
                 <div className="name">JC</div>
                 <div className="role">Developer</div>
                 <div className="role">
-                  <TwitterIcon />
+                  <a href="https://twitter.com/JC__Jean">
+                    <TwitterIcon style={{ cursor: "pointer" }} />
+                  </a>
                 </div>
               </StyledNode>
               <StyledNode>
@@ -562,7 +557,7 @@ The GeekPandaz team has built an exciting long-term roadmap. A few highlights in
                 <div className="name">OG</div>
                 <div className="role">Management Lead</div>
                 <div className="role">
-                  <TwitterIcon />
+                  <TwitterIcon style={{ cursor: "pointer" }} />
                 </div>
               </StyledNode>
               <StyledNode>
@@ -574,7 +569,7 @@ The GeekPandaz team has built an exciting long-term roadmap. A few highlights in
                 <div className="name">Jake aka YOLO</div>
                 <div className="role">Communications</div>
                 <div className="role">
-                  <TwitterIcon />
+                  <TwitterIcon style={{ cursor: "pointer" }} />
                 </div>
               </StyledNode>
               <StyledNode>
@@ -586,7 +581,7 @@ The GeekPandaz team has built an exciting long-term roadmap. A few highlights in
                 <div className="name">Jake</div>
                 <div className="role">Marketing Lead</div>
                 <div className="role">
-                  <TwitterIcon />
+                  <TwitterIcon style={{ cursor: "pointer" }} />
                 </div>
               </StyledNode>
             </div>
