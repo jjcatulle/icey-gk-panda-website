@@ -5,14 +5,7 @@ import React, { lazy, Suspense } from "react";
 import CircularProgress from "@mui/material/CircularProgress";
 import Box from "@mui/material/Box";
 
-const LandingPage = lazy(
-  () =>
-    new Promise((resolve) => {
-      setTimeout(() => {
-        resolve(import("./pages/HomePage/HomePage.page"));
-      }, 5000);
-    })
-);
+const LandingPage = lazy(() => import("./pages/HomePage/HomePage.page"));
 const DashboardPage = lazy(() => import("./pages/Dashboard/Dashboard.page"));
 
 function CircularIndeterminate() {
