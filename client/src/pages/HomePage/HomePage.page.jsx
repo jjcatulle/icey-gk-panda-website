@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Typewriter from "typewriter-effect";
 
-import promoVideo from "../../assets/video/GP.mp4";
+import promoVideo from "../../assets/video/twitter.mp4";
 import { Bottom, Top } from "../../global.styles";
 import {
   HomePageCtn,
@@ -550,7 +550,7 @@ Immutable have partnered with TikTok, Veve and Opensea. You can find out more ab
               </StyledNode>
               <StyledNode>
                 <img
-                  src="https://bafkreicvxrmua5elgo5f5swbv2j2mv53ct25peielzfvs5wbd52gtrfdoe.ipfs.dweb.link/"
+                  src="https://cdn.discordapp.com/attachments/919383873153028167/921627009208156190/Drip.png"
                   alt=""
                   srcset=""
                 />
@@ -581,6 +581,9 @@ Immutable have partnered with TikTok, Veve and Opensea. You can find out more ab
                 <div className="name">Jake</div>
                 <div className="role">Marketing Lead</div>
                 <div className="role">
+                  <a href="https://twitter.com/juicyjakee">
+                    <TwitterIcon style={{ cursor: "pointer" }} />
+                  </a>
                   {/* <TwitterIcon style={{ cursor: "pointer" }} /> */}
                 </div>
               </StyledNode>
