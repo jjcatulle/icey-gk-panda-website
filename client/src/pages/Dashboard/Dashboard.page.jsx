@@ -65,10 +65,9 @@ const DashBoard = () => {
       case "home":
         return (
           <DashboardWelcome>
-            <div className="title">Welcome..</div>
+            <div className="title">(Beta) Welcome..</div>
             <div className="">
-              This dashboard includes tools to help with your migration to the
-              main ethereum network
+              This dashboard will include tools to help you manage your membership as a Panda holder
             </div>
           </DashboardWelcome>
         );

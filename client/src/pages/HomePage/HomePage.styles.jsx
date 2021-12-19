@@ -273,7 +273,6 @@ export const TimeLineCtn = styled.div`
 // strings: ["1500 Pandaz in the Forest of Pandaria ready to take over the me Verse "],
 
 export const TimeLineItemCtn = styled.div`
-  letter-spacing: 2px;
   color: white;
   font-family: "ZCOOL XiaoWei", serif;
   border: 3px solid #ae2e07;
@@ -288,7 +287,7 @@ export const TimeLineItemCtn = styled.div`
   }
   ul {
     font-weight: 700;
-    font-size: 20px;
+    font-size: 18px;
   }
 
   @media screen and (max-width: 800px) {
@@ -404,6 +403,10 @@ export const StyledNode = styled.div`
   .role{
     color:#b22c00;
     padding:10px;
+
+    a{
+          color:#b22c00;
+    }
   }
 
     @media screen and (max-width: 800px) {
@@ -416,7 +419,7 @@ export const FooterCtn = styled.div`
   height: 100px;
   background-image: linear-gradient(
     to bottom,
-    rgba(17, 17, 17, .9),
+    rgba(17, 17, 17, 0.9),
     rgba(17, 17, 17, 1)
   );
   display: flex;

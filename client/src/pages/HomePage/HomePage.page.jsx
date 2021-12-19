@@ -557,7 +557,7 @@ Immutable have partnered with TikTok, Veve and Opensea. You can find out more ab
                 <div className="name">OG</div>
                 <div className="role">Management Lead</div>
                 <div className="role">
-                  <TwitterIcon style={{ cursor: "pointer" }} />
+                  {/* <TwitterIcon style={{ cursor: "pointer" }} /> */}
                 </div>
               </StyledNode>
               <StyledNode>
@@ -569,7 +569,7 @@ Immutable have partnered with TikTok, Veve and Opensea. You can find out more ab
                 <div className="name">Jake aka YOLO</div>
                 <div className="role">Communications</div>
                 <div className="role">
-                  <TwitterIcon style={{ cursor: "pointer" }} />
+                  {/* <TwitterIcon style={{ cursor: "pointer" }} /> */}
                 </div>
               </StyledNode>
               <StyledNode>
@@ -581,7 +581,7 @@ Immutable have partnered with TikTok, Veve and Opensea. You can find out more ab
                 <div className="name">Jake</div>
                 <div className="role">Marketing Lead</div>
                 <div className="role">
-                  <TwitterIcon style={{ cursor: "pointer" }} />
+                  {/* <TwitterIcon style={{ cursor: "pointer" }} /> */}
                 </div>
               </StyledNode>
             </div>
