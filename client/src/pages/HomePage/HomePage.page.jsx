@@ -511,7 +511,8 @@ const HomePage = () => {
               />
 
               {/* <img src="https://images.squarespace-cdn.com/content/v1/617173c2e542983559ce6958/773a28c0-f409-432e-88d8-afe88128ee98/LOGO+web+PNG.png?format=1500w" /> */}
-              <a href="#about">EXPLORE</a>
+              {/* <a href="#about">EXPLORE</a> */}
+              <a href="/mint">Mint</a>
               <div className="mute" onClick={toggleMuteBtn}>
                 {mute ? "Unmute" : "Mute"} Audio
               </div>
@@ -631,9 +632,7 @@ Immutable have partnered with TikTok, Veve and Opensea. You can find out more ab
                 <div className="name">Jake aka YOLO</div>
                 <div className="role">Communications</div>
                 <div className="role">
-                  <a
-                    href="https://twitter.com/JakeYoloxD"
-                  >
+                  <a href="https://twitter.com/JakeYoloxD">
                     <TwitterIcon style={{ cursor: "pointer" }} />
                   </a>
                   {/* <TwitterIcon style={{ cursor: "pointer" }} /> */}

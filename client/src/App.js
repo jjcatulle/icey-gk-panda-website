@@ -7,6 +7,7 @@ import Box from "@mui/material/Box";
 
 const LandingPage = lazy(() => import("./pages/HomePage/HomePage.page"));
 const DashboardPage = lazy(() => import("./pages/Dashboard/Dashboard.page"));
+const MintingPage = lazy(() => import("./pages/Mint/Mint.page"));
 
 function CircularIndeterminate() {
   return (
@@ -34,6 +35,7 @@ function App() {
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/dashboard" element={<DashboardPage />} />
+          <Route path="/mint" element={<MintingPage />} />
         </Routes>
       </Suspense>
     </div>

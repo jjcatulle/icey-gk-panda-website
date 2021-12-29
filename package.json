@@ -9,7 +9,8 @@
     "express": "^4.17.1",
     "got": "^11.8.3",
     "object-assign": "^4.1.1",
-    "vary": "^1.1.2"
+    "vary": "^1.1.2",
+    "web3": "^1.6.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
