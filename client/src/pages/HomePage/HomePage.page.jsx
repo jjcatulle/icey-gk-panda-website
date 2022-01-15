@@ -430,7 +430,6 @@ const FaqItem = ({ label = "", text = "" }) => {
   );
 };
 
-
 const HomePage = () => {
   const navigate = useNavigate();
 
@@ -497,7 +496,7 @@ const HomePage = () => {
           </AppBarCtn>
           <LogoCtn>
             <LogoCtnItems>
-              <div className="name-company">GEEKPANDAZ</div>
+              <div className="name-company">ICEYPANDAZ</div>
 
               <Typewriter
                 className="type"
@@ -509,9 +508,6 @@ const HomePage = () => {
                   loop: true,
                 }}
               />
-
-              {/* <img src="https://images.squarespace-cdn.com/content/v1/617173c2e542983559ce6958/773a28c0-f409-432e-88d8-afe88128ee98/LOGO+web+PNG.png?format=1500w" /> */}
-              {/* <a href="#about">EXPLORE</a> */}
               <a href="/mint">Mint</a>
               <div className="mute" onClick={toggleMuteBtn}>
                 {mute ? "Unmute" : "Mute"} Audio
@@ -585,9 +581,13 @@ Immutable have partnered with TikTok, Veve and Opensea. You can find out more ab
             <div className="items">
               <StyledNode>
                 <img
-                  src="https://media.discordapp.net/attachments/920896258913206313/921876854997139456/download_2.png"
+                  src="https://media.discordapp.net/attachments/926597475295461436/931664657939329044/inconnu.png?width=1138&height=1138"
                   alt=""
                   srcset=""
+                  onClick={()=>{
+                    window.location.href =
+                      "https://forms.gle/QGbDbdFExUKseWDQ6";
+                  }}
                 />
                 <div className="name">Fish</div>
                 <div className="role">Project Lead</div>
@@ -657,7 +657,8 @@ Immutable have partnered with TikTok, Veve and Opensea. You can find out more ab
           </TeamCtn>
           <FooterCtn>
             <div style={{ margin: "auto" }}>
-              Made with <FavoriteIcon /> by JC
+              Made with <FavoriteIcon /> by JC for IceyPandaz - All Rights
+              Reserved -
             </div>
           </FooterCtn>
         </Top>

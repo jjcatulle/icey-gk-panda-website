@@ -39,7 +39,7 @@ export const DashboardContents = styled.div`
 export const SideBarCtn = styled.div`
   height: 100vh;
   width: 70px;
-  background-image: linear-gradient(to bottom, rgba(178, 44, 0, .5), #b22c00);
+  background-image: linear-gradient(to bottom, rgba(178, 44, 0, 0.5), #b22c00);
   color: white;
   display: flex;
   flex-direction: column;
@@ -139,5 +139,38 @@ export const PopUPCtn = styled.div`
   width: 100vw;
   height: 100vh;
   filter: blur(8px);
-  background:red;
+  background: red;
+`;
+
+export const StakingCtn = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 80px;
+  padding-top: 20px;
+
+  .details-ctn {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    font-size: 30px;
+
+    .item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  .claim-btn {
+    font-size: 30px;
+    margin-top: 20px;
+    border: 2px solid #b22c00;
+    color: #b22c00;
+    padding: 15px;
+    border-radius: 20px;
+    cursor: pointer;
+  }
 `;

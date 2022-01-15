@@ -4,11 +4,16 @@
   "description": "npx create-react-app client npx express-generator api https://www.freecodecamp.org/news/create-a-react-frontend-a-node-express-backend-and-connect-them-together-c5798926047c/",
   "main": "index.js",
   "dependencies": {
-    "@imtbl/imx-sdk": "^1.3.8",
+    "@usedapp/core": "^0.8.0",
+    "body-parser": "^1.19.1",
     "cors": "^2.8.5",
+    "dotenv": "^12.0.3",
     "express": "^4.17.1",
     "got": "^11.8.3",
+    "mongoose": "^5.9.22",
     "object-assign": "^4.1.1",
+    "react-multi-select-component": "^4.1.15",
+    "react-select": "^5.2.1",
     "vary": "^1.1.2",
     "web3": "^1.6.1"
   },
