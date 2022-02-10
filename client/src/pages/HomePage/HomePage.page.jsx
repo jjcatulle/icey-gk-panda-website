@@ -41,6 +41,8 @@ import jc from "../../assets/img/profiles/jc.jfif";
 import og from "../../assets/img/profiles/og.png";
 import strange from "../../assets/img/projects/strange-creatures.jpg";
 import rovers from "../../assets/img/projects/imx-rovers.png";
+import rarity from "../../assets/img/projects/imx-rarity.jpg";
+import acrona from "../../assets/img/projects/acrona-city.png";
 
 function ColorsTimeline() {
   const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" });
@@ -501,7 +503,41 @@ const HomePage = () => {
               </StyledNode>
             </div>
           </TeamCtn>
-
+          <TeamCtn>
+            <div className="title">Partners</div>
+            <div className="items">
+            <StyledNode>
+                <img
+                  src={acrona}
+                  alt="Acrona City"
+                  srcset=""
+                  style={{width: "196.21px", height: "196.21px"}}
+                />
+                <div className="name">Acrona City</div>
+                <div className="role">Partner</div>
+                <div className="role">
+                  <a href="https://acronacity.com.au/" target="_blank" rel="noreferrer">
+                    <LinkIcon style={{ cursor: "pointer" }} />
+                  </a>
+                </div>
+              </StyledNode>
+              <StyledNode>
+                <img
+                  src={rarity}
+                  alt="IMX Rarity"
+                  srcset=""
+                  style={{width: "196.21px", height: "196.21px"}}
+                />
+                <div className="name">IMX Rarity</div>
+                <div className="role">Partner</div>
+                <div className="role">
+                  <a href="https://imxrarity.io/" target="_blank" rel="noreferrer">
+                    <LinkIcon style={{ cursor: "pointer" }} />
+                  </a>
+                </div>
+              </StyledNode>
+            </div>
+          </TeamCtn>
           <FaqsCtn>
             <div className="title">FAQ</div>
             <div className="items">
