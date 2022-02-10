@@ -453,7 +453,7 @@ const HomePage = () => {
                 animateOut="bounceOutRight"
                 duration={3}
               >
-                <img src={slide.pictures[slide.slideIndex]} alt="" srcset="" />
+                <img src="https://media.discordapp.net/attachments/937537796095229962/941156043117973564/Webp.net-gifmaker_5.gif" alt="" srcset="" />
               </ScrollAnimation>
             </div>
           </AboutCtn>
