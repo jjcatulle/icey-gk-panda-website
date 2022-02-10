@@ -20,8 +20,8 @@ export const WelcomeCtn = styled.div`
       margin-top: 10px;
       font-size: 40px;
       font-weight: 500;
-      border: 2px solid #b22c00;
-      color: #b22c00;
+      border: 2px solid #36B0FF;
+      color: #36B0FF;
       background: none;
       border-radius: 10px;
       padding: 5px;
@@ -39,7 +39,7 @@ export const DashboardContents = styled.div`
 export const SideBarCtn = styled.div`
   height: 100vh;
   width: 70px;
-  background-image: linear-gradient(to bottom, rgba(178, 44, 0, 0.5), #b22c00);
+  background-image: linear-gradient(to bottom, rgba(178, 44, 0, 0.5), #36B0FF);
   color: white;
   display: flex;
   flex-direction: column;
@@ -86,7 +86,7 @@ export const MainBody = styled.div`
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
-      background: #b22c00;
+      background: #36B0FF;
       padding: 7px;
     }
   }
@@ -100,7 +100,7 @@ export const MainBody = styled.div`
 export const DashboardWelcome = styled.div`
   margin: auto;
   margin-top: 100px;
-  background-image: linear-gradient(125deg, rgba(178, 44, 0, 0.5), #b22c00);
+  background-image: linear-gradient(125deg, rgba(178, 44, 0, 0.5), #36B0FF);
   // color:white;
   width: 600px;
   font-size: 20px;
@@ -167,8 +167,8 @@ export const StakingCtn = styled.div`
   .claim-btn {
     font-size: 30px;
     margin-top: 20px;
-    border: 2px solid #b22c00;
-    color: #b22c00;
+    border: 2px solid #36B0FF;
+    color: #36B0FF;
     padding: 15px;
     border-radius: 20px;
     cursor: pointer;

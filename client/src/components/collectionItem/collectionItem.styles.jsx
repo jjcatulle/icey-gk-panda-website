@@ -12,20 +12,20 @@ export const CollectionItemCtn = styled.div`
   // border: 5px solid pink;
   // box-shadow: 5px 5px 10px 0.5px #0ff;
 
-  border: 2px solid #b22c00;
+  border: 2px solid #36B0FF;
   border-radius: 10px;
   padding-bottom:7px;
 
   &:hover {
-    border: 3.5px solid #b22c00;
+    border: 3.5px solid #36B0FF;
     cursor: pointer;
   }
 
   img {
     height: 90%;
     object-fit: cover;
-    border-top: 2px solid #b22c00;
-    border-bottom: 2px solid #b22c00;
+    border-top: 2px solid #36B0FF;
+    border-bottom: 2px solid #36B0FF;
     border-radius: 10px 10px 0 0;
   }
 

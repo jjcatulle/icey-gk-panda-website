@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Typewriter from "typewriter-effect";
 
-import promoVideo from "../../assets/video/twitter.mp4";
+import promoVideo from "../../assets/video/Icey_panda_2.gif";
 import { Bottom, Top } from "../../global.styles";
 import {
   HomePageCtn,
@@ -19,7 +19,7 @@ import {
   StyledNode,
   FooterCtn,
 } from "./HomePage.styles";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Link } from "react-router-dom";
 import { Tree, TreeNode } from "react-organizational-chart";
 import { useMediaQuery } from "react-responsive";
 import { useNavigate } from "react-router-dom";
@@ -33,6 +33,14 @@ import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineDot from "@mui/lab/TimelineDot";
 import TwitterIcon from "@mui/icons-material/Twitter";
+import LinkIcon from "@mui/icons-material/Link";
+
+import song from "../../assets/audio/bensound-dubstep.mp3";
+import fish from "../../assets/img/profiles/fish.png";
+import jc from "../../assets/img/profiles/jc.jfif";
+import og from "../../assets/img/profiles/og.png";
+import strange from "../../assets/img/projects/strange-creatures.jpg";
+import rovers from "../../assets/img/projects/imx-rovers.png";
 
 function ColorsTimeline() {
   const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" });
@@ -43,7 +51,7 @@ function ColorsTimeline() {
         <TimelineSeparator>
           <TimelineDot
             style={{
-              background: "#b22c00",
+              background: "#36B0FF",
               width: "20px",
               height: "20px",
             }}
@@ -61,37 +69,13 @@ function ColorsTimeline() {
                   promising vision to the Geek Pandaz!
                 </li>
                 <li>
-                  DAO: The Pandaria Council DAO formulates to give every holder
+                  DAO: The Icetopia Council DAO formulates to give every holder
                   a voice in the project’s direction!
                 </li>
                 <li>
                   New Website: The website receives a facelift as a new era in
-                  Pandaria begins! The accompanying interactive dashboard will
+                  Icetopia begins! The accompanying interactive dashboard will
                   become available as well.
-                </li>
-                <li>
-                  Staking: JC, the Head Developer, is putting in overtime for
-                  the Pandaz: the $GEEK token is coming to life! The development
-                  of the staking mechanism is close to completion, and it will
-                  be integrated into the dashboard, which will include future
-                  drops and GeekPandaz-exclusive merchandise.
-                </li>
-                <li>
-                  OpenSea Integration: The test run integration from IMX to the
-                  ETH mainnet has been successful! We are working on gaining
-                  access to the metadata from the previous developer,
-                  Kotnascher, to finalize the process.
-                </li>
-                <li>
-                   Christmas Miracle(s): One lucky Panda holder will be
-                  airdropped a LEGENDARY PANDA! A second legendary will also be
-                  Dutch auctioned on Open Sea with the Geek Pandaz join
-                </li>
-                <li>
-                   All Panda holders get an interesting surprise…a free Jolly
-                  Panda! 800 Jolly Pandas join the Geek Pandas to celebrate a
-                  successful OpenSea integration! That is all the information we
-                  are allowed to give away for now…
                 </li>
               </ul>
             </TimeLineItemCtn>
@@ -102,7 +86,7 @@ function ColorsTimeline() {
         <TimelineSeparator>
           <TimelineDot
             style={{
-              background: "#b22c00",
+              background: "#36B0FF",
               width: "20px",
               height: "20px",
             }}
@@ -120,37 +104,16 @@ function ColorsTimeline() {
                 <div className="mytitle">January 2022</div>
                 <ul
                 // dir="rtl"
-                >
+                ><li>Staking: JC, the Head Developer, is putting in overtime for the Pandaz: the $ICE token is coming to life! The development of the staking mechanism is close to completion, and it will be integrated into the dashboard, which will include future drops and Icey Pandaz-exclusive merchandise. </li>
                   <li>
-                    Expansion: The team aims to use this time to work on
-                    partnerships and collaborations to grow and strengthen the
-                    community. This includes other IMX projects like Foreign
-                    Fuels, Pixel Degens and IMX Squirrels.
+                  Expansion: The team aims to use this time to work on partnerships and collaborations to grow and strengthen the community. This includes other projects like Acrona City, IMX Squirrels, and MANY MORE! 
                   </li>
                   <li>
-                    Private Gaming Ecosystem: We will begin to implement twitch
-                    influencers into our gameplan: Panda holders will have
-                    access to twitch rewards for watching GeekPandaz-sponsored
-                    content creators!
+                  Launchpad: There will be projects launching off of Icey Pandaz, such as the IMX ROVERS! Icey Pandaz holders will receive whitelist spots and other potential perks for staking their panda and verifying on the website.
                   </li>
                   <li>
-                    Verified GeekPandaz holders will gain access to
-                    collaborations and partnerships for watching Geekpandaz
-                    streamers! We will have many surprises in store to support
-                    our gaming community!
-                  </li>
-                  <li>
-                    Launchpad: There will be projects launching off of
-                    GeekPandaz website. GeekPandaz holders will be given
-                    whitelist spots and other potential perks for staking their
-                    panda and verifying on the website.
-                  </li>
-                  <li>
-                    Community Wallet: A MetaPandaz Community Chest will be
-                    opened and seeded with ETH. Holders will be able to vote to
-                    launch experiences, activations, and campaigns that benefit
-                    the entire Pandaz ecosystem.
-                  </li>
+                  Gaming Teams/Guilds: The Icey Panda holders can join gaming teams and guilds that we partner with!                  </li>
+                  
                 </ul>
               </TimeLineItemCtn>
             </ScrollAnimation>
@@ -161,7 +124,7 @@ function ColorsTimeline() {
         <TimelineSeparator>
           <TimelineDot
             style={{
-              background: "#b22c00",
+              background: "#36B0FF",
               width: "20px",
               height: "20px",
             }}
@@ -181,11 +144,10 @@ function ColorsTimeline() {
                 // dir="rtl"
                 >
                   <li>
-                    Community Games: GeekPandaz will host regular tournaments
-                    for holders to compete in AAA games and there will be
-                    massive prize pools of $GEEK up for grabs! Livestream
-                    tournaments will allow viewers to earn additional $GEEK!
+                  Community Games: Icey Pandaz will host regular tournaments for holders to compete in AAA games and there will be massive prize pools of $ICE up for grabs! Livestream tournaments will allow viewers to earn additional $ICE!
                   </li>
+                  <li>Merchandise: A store will open with unique prizes to be bought with the $ICE token!!</li>
+                  <li>Community Wallet: A MetaPandaz Community Chest will be opened and seeded with ETH. Holders will be able to vote to launch experiences, activations, and campaigns that benefit the entire Pandaz ecosystem.</li>
                 </ul>
               </TimeLineItemCtn>
             </ScrollAnimation>
@@ -196,7 +158,7 @@ function ColorsTimeline() {
         <TimelineSeparator>
           <TimelineDot
             style={{
-              background: "#b22c00",
+              background: "#36B0FF",
               width: "20px",
               height: "20px",
             }}
@@ -216,17 +178,10 @@ function ColorsTimeline() {
                 // dir="rtl"
                 >
                   <li>
-                    New Collection: There will be a new generation of GeekPandaz
-                    on OpensSea
+                  New Collection: There will be a new generation of 3-D Icey Pandaz on OpensSea
                   </li>
                   <li>
-                    Breeding: It’s time for the mating season! GeekPandaz
-                    holders can utilize their $GEEK tokens and burn one of their
-                    GeekPandaz (with the requirement of having at least 2) to
-                    produce a unique baby MetaPanda. The GeekPandaz team will
-                    release an additional supply of MetaPandaz for the public to
-                    mint, allowing new members to join our community.
-                  </li>
+                  Breeding: It’s time for the mating season! Panda holders can utilize their $ICE tokens and breed (with the requirement of having at least two) to produce a unique baby Meta Panda. The Icey Pandaz team will release an additional supply of Meta Pandaz for the public to mint, allowing new members to join our community.</li>
                 </ul>
               </TimeLineItemCtn>
             </ScrollAnimation>
@@ -237,7 +192,7 @@ function ColorsTimeline() {
         <TimelineSeparator>
           <TimelineDot
             style={{
-              background: "#b22c00",
+              background: "#36B0FF",
               width: "20px",
               height: "20px",
             }}
@@ -256,9 +211,7 @@ function ColorsTimeline() {
                 // dir="rtl"
                 >
                   <li>
-                    $GEEK will be able to be used to level up your Gen 2 Pandaz.
-                    With a unique Tier system to unlock special features of your
-                    Pandaz.
+                  $ICE will be able to be used to level up your Gen 2 Pandaz. With a unique Tier system to unlock special features of your Pandaz.
                   </li>
                   <li>
                     There will be much more in the future. Stay tuned for
@@ -282,129 +235,78 @@ function MobileColorsTimeline() {
       <TimeLineItemCtn>
         <div className="mytitle">December 2021</div>
         <ul>
-          <li>
-            New Project Lead: Chen transferred ownership to FISHMARKET. The new
-            lead has built his own dedicated team and a new promising vision to
-            the Geek Pandaz!
-          </li>
-          <li>
-            DAO: The Pandaria Council DAO formulates to give every holder a
-            voice in the project’s direction!
-          </li>
-          <li>
-            New Website: The website receives a facelift as a new era in
-            Pandaria begins! The accompanying interactive dashboard will become
-            available as well.
-          </li>
-          <li>
-            Staking: JC, the Head Developer, is putting in overtime for the
-            Pandaz: the $GEEK token is coming to life! The development of the
-            staking mechanism is close to completion, and it will be integrated
-            into the dashboard, which will include future drops and
-            GeekPandaz-exclusive merchandise.
-          </li>
-          <li>
-            OpenSea Integration: The test run integration from IMX to the ETH
-            mainnet has been successful! We are working on gaining access to the
-            metadata from the previous developer, Kotnascher, to finalize the
-            process.
-          </li>
-          <li>
-             Christmas Miracle(s): One lucky Panda holder will be airdropped a
-            LEGENDARY PANDA! A second legendary will also be Dutch auctioned on
-            Open Sea with the Geek Pandaz join
-          </li>
-          <li>
-             All Panda holders get an interesting surprise…a free Jolly Panda!
-            800 Jolly Pandas join the Geek Pandas to celebrate a successful
-            OpenSea integration! That is all the information we are allowed to
-            give away for now…
-          </li>
-        </ul>
+                <li>
+                  New Project Lead: Chen transferred ownership to FISHMARKET.
+                  The new lead has built his own dedicated team and a new
+                  promising vision to the Geek Pandaz!
+                </li>
+                <li>
+                  DAO: The Icetopia Council DAO formulates to give every holder
+                  a voice in the project’s direction!
+                </li>
+                <li>
+                  New Website: The website receives a facelift as a new era in
+                  Icetopia begins! The accompanying interactive dashboard will
+                  become available as well.
+                </li>
+              </ul>
       </TimeLineItemCtn>
 
       <TimeLineItemCtn>
         <div className="mytitle">January 2022</div>
         <ul
-        // dir="rtl"
-        >
-          <li>
-            Expansion: The team aims to use this time to work on partnerships
-            and collaborations to grow and strengthen the community. This
-            includes other IMX projects like Foreign Fuels, Pixel Degens and IMX
-            Squirrels.
-          </li>
-          <li>
-            Private Gaming Ecosystem: We will begin to implement twitch
-            influencers into our gameplan: Panda holders will have access to
-            twitch rewards for watching GeekPandaz-sponsored content creators!
-          </li>
-          <li>
-            Verified GeekPandaz holders will gain access to collaborations and
-            partnerships for watching Geekpandaz streamers! We will have many
-            surprises in store to support our gaming community!
-          </li>
-          <li>
-            Launchpad: There will be projects launching off of GeekPandaz
-            website. GeekPandaz holders will be given whitelist spots and other
-            potential perks for staking their panda and verifying on the
-            website.
-          </li>
-          <li>
-            Community Wallet: A MetaPandaz Community Chest will be opened and
-            seeded with ETH. Holders will be able to vote to launch experiences,
-            activations, and campaigns that benefit the entire Pandaz ecosystem.
-          </li>
-        </ul>
+                // dir="rtl"
+                ><li>Staking: JC, the Head Developer, is putting in overtime for the Pandaz: the $ICE token is coming to life! The development of the staking mechanism is close to completion, and it will be integrated into the dashboard, which will include future drops and Icey Pandaz-exclusive merchandise. </li>
+                  <li>
+                  Expansion: The team aims to use this time to work on partnerships and collaborations to grow and strengthen the community. This includes other projects like Acrona City, IMX Squirrels, and MANY MORE! 
+                  </li>
+                  <li>
+                  Launchpad: There will be projects launching off of Icey Pandaz, such as the IMX ROVERS! Icey Pandaz holders will receive whitelist spots and other potential perks for staking their panda and verifying on the website.
+                  </li>
+                  <li>
+                  Gaming Teams/Guilds: The Icey Panda holders can join gaming teams and guilds that we partner with!                  </li>
+                  
+                </ul>
       </TimeLineItemCtn>
       <TimeLineItemCtn>
         <div className="mytitle">February 2022</div>
         <ul
-        // dir="rtl"
-        >
-          <li>
-            Community Games: GeekPandaz will host regular tournaments for
-            holders to compete in AAA games and there will be massive prize
-            pools of $GEEK up for grabs! Livestream tournaments will allow
-            viewers to earn additional $GEEK!
-          </li>
-        </ul>
+                // dir="rtl"
+                >
+                  <li>
+                  Community Games: Icey Pandaz will host regular tournaments for holders to compete in AAA games and there will be massive prize pools of $ICE up for grabs! Livestream tournaments will allow viewers to earn additional $ICE!
+                  </li>
+                  <li>Merchandise: A store will open with unique prizes to be bought with the $ICE token!!</li>
+                  <li>Community Wallet: A MetaPandaz Community Chest will be opened and seeded with ETH. Holders will be able to vote to launch experiences, activations, and campaigns that benefit the entire Pandaz ecosystem.</li>
+                </ul>
       </TimeLineItemCtn>
 
       <TimeLineItemCtn>
         <div className="mytitle">March 2022</div>
         <ul
-        // dir="rtl"
-        >
-          <li>
-            New Collection: There will be a new generation of GeekPandaz on
-            OpensSea
-          </li>
-          <li>
-            Breeding: It’s time for the mating season! GeekPandaz holders can
-            utilize their $GEEK tokens and burn one of their GeekPandaz (with
-            the requirement of having at least 2) to produce a unique baby
-            MetaPanda. The GeekPandaz team will release an additional supply of
-            MetaPandaz for the public to mint, allowing new members to join our
-            community.
-          </li>
-        </ul>
+                // dir="rtl"
+                >
+                  <li>
+                  New Collection: There will be a new generation of 3-D Icey Pandaz on OpensSea
+                  </li>
+                  <li>
+                  Breeding: It’s time for the mating season! Panda holders can utilize their $ICE tokens and breed (with the requirement of having at least two) to produce a unique baby Meta Panda. The Icey Pandaz team will release an additional supply of Meta Pandaz for the public to mint, allowing new members to join our community.</li>
+                </ul>
       </TimeLineItemCtn>
 
       <TimeLineItemCtn>
         <div className="mytitle">April 2022</div>
         <ul
-        // dir="rtl"
-        >
-          <li>
-            $GEEK will be able to be used to level up your Gen 2 Pandaz. With a
-            unique Tier system to unlock special features of your Pandaz.
-          </li>
-          <li>
-            There will be much more in the future. Stay tuned for updates on the
-            roadmap!
-          </li>
-        </ul>
+                // dir="rtl"
+                >
+                  <li>
+                  $ICE will be able to be used to level up your Gen 2 Pandaz. With a unique Tier system to unlock special features of your Pandaz.
+                  </li>
+                  <li>
+                    There will be much more in the future. Stay tuned for
+                    updates on the roadmap!
+                  </li>
+                </ul>
       </TimeLineItemCtn>
     </>
   );
@@ -432,8 +334,9 @@ const FaqItem = ({ label = "", text = "" }) => {
 
 const HomePage = () => {
   const navigate = useNavigate();
+  // const [audio] = useState(new Audio({song}));
 
-  const [mute, setmute] = useState(true);
+  // const [mute, setmute] = useState(true);
   const [slide, setslide] = useState({
     interval: null,
     slideIndex: 0,
@@ -454,41 +357,44 @@ const HomePage = () => {
   useEffect(() => {
     setInterval(() => {
       let slideLength = slide.pictures.length - 1;
-      if (slide.slideIndex != slideLength) {
+      if (slide.slideIndex !== slideLength) {
         setslide({ ...slide, slideIndex: slide.slideIndex + 1 });
       } else {
         setslide({ ...slide, slideIndex: 0 });
       }
     }, 1000);
-  }, []);
+  }, [slide]);
 
-  const toggleMuteBtn = () => {
-    setmute(!mute);
-  };
+  // const toggleMuteBtn = () => {
+  //   setmute(!mute);
+  // };
+
+  // useEffect(() => {
+  //   !mute ? audio.play() : audio.pause();
+  // }, [audio, mute]);
+
+  // useEffect(() => {
+  //   audio.addEventListener('ended', () => setmute(false));
+  //   return () => {
+  //     audio.removeEventListener('ended', () => setmute(false));
+  //   };
+  // }, [audio]);
+
   return (
     <HomePageCtn>
       <LandingCtn>
         <Bottom>
-          <VideoCtn autoPlay muted={mute} loop>
-            <source src={promoVideo} type="video/mp4" />
+          <VideoCtn>
+            <img src={promoVideo} alt="IceyPandaz" style={{width: "100%", height: "100%"}} />
           </VideoCtn>
         </Bottom>
         <Top>
           <AppBarCtn>
             <div className="contents">
-              <a href="https://discord.gg/9rEhk5x3Xm" className="item">
-                Discord
-              </a>
-              <a href="https://twitter.com/GeekPandaz" className="item">
+              <a href="https://twitter.com/IceyPandaz" target="_blank" rel="noreferrer" className="item">
                 Twitter
               </a>
-              <a className="item">Contact Us</a>
-              <a
-                href="https://market.x.immutable.com/assets?collection=0xdf1a6b88b8c1c3a6f6eaf3f43c6b052ef94a662d"
-                className="item"
-              >
-                Imx
-              </a>
+              <a href="https://forms.gle/5TWb4PCycjqJ818p8" target="_blank" rel="noreferrer" className="item">Contact Us</a>
               <Link to="/dashboard" className="button">
                 Dashboard
               </Link>
@@ -502,16 +408,16 @@ const HomePage = () => {
                 className="type"
                 options={{
                   strings: [
-                    "1500 unique Pandaz in the Forest of Pandaria ready to take over the metaverse ",
+                    "800 unique Pandaz in the Forest of Icetopia ready to take over the metaverse ",
                   ],
                   autoStart: true,
                   loop: true,
                 }}
               />
               <a href="/mint">Mint</a>
-              <div className="mute" onClick={toggleMuteBtn}>
+              {/* <div className="mute" onClick={toggleMuteBtn}>
                 {mute ? "Unmute" : "Mute"} Audio
-              </div>
+              </div> */}
             </LogoCtnItems>
           </LogoCtn>
           <AboutCtn id="about">
@@ -523,17 +429,17 @@ const HomePage = () => {
               >
                 <div className="content">
                   <div className="title">
-                    The GeekPandaz are a Genesis collection of 1,500 unique NFTs
-                    on Immutable X ready to take over the Pandaria universe.
+                    The IceyPandaz are a Genesis collection of 800 unique NFTs
+                    on Opensea ready to take over the Icetopia universe.
                   </div>
                   <div className="description">
-                    It all starts with the Genesis GeekPandaz mint. The
-                    Pandarian family grows together, and the proceeds of this
+                    It all starts with the Genesis IceyPandaz mint. The
+                    Icetopian family grows together, and the proceeds of this
                     mint will be used to fund a launchpad for blockchain games.
                     We believe that the blockchain will revolutionize
                     play-to-earn gaming by introducing transparency, ownership,
                     incentive models, and NFTs to the space. We see the
-                    Pandarian family as having a major role to play in the
+                    Icetopian family as having a major role to play in the
                     growth and evolution of this space.
                   </div>
                 </div>
@@ -560,12 +466,48 @@ const HomePage = () => {
               </div>
             </div>
           </TimeLineCtn>
+          
+          <TeamCtn>
+            <div className="title">Projects</div>
+            <div className="items">
+              <StyledNode>
+                <img
+                  src={rovers}
+                  alt="IMX Rovers"
+                  srcset=""
+                  style={{width: "196.21px", height: "196.21px"}}
+                />
+                <div className="name">IMX Rovers</div>
+                <div className="role">Project</div>
+                <div className="role">
+                  <a href="https://imxrovers.club/" target="_blank" rel="noreferrer">
+                    <LinkIcon style={{ cursor: "pointer" }} />
+                  </a>
+                </div>
+              </StyledNode>
+              <StyledNode>
+                <img
+                  src={strange}
+                  alt="Strange Creatures"
+                  srcset=""
+                />
+                <div className="name">Strange Creatures</div>
+                <div className="role">Project</div>
+                <div className="role">
+                  <a href="https://strangecreatures.io/" target="_blank" rel="noreferrer">
+                    <LinkIcon style={{ cursor: "pointer" }} />
+                  </a>
+                </div>
+              </StyledNode>
+            </div>
+          </TeamCtn>
+
           <FaqsCtn>
             <div className="title">FAQ</div>
             <div className="items">
               <FaqItem
-                label="Who are the GeekPandaz?"
-                text="The GeekPandaz are a collection of 1500 unique NFTs living on Immutable X. Each Panda is a sight to behold - thoughtfully designed, loaded with accessories, and ready to take over the Pandaria universe."
+                label="Who are the IceyPandaz?"
+                text="The IceyPandaz are a collection of 800 unique NFTs living on Immutable X. Each Panda is a sight to behold - thoughtfully designed, loaded with accessories, and ready to take over the Icetopia universe."
               />
               <FaqItem
                 label="Why did you choose Immutable X?"
@@ -581,7 +523,7 @@ Immutable have partnered with TikTok, Veve and Opensea. You can find out more ab
             <div className="items">
               <StyledNode>
                 <img
-                  src="https://media.discordapp.net/attachments/926597475295461436/931664657939329044/inconnu.png?width=1138&height=1138"
+                  src={fish}
                   alt=""
                   srcset=""
                   onClick={()=>{
@@ -599,7 +541,7 @@ Immutable have partnered with TikTok, Veve and Opensea. You can find out more ab
               </StyledNode>
               <StyledNode>
                 <img
-                  src="https://bafkreieyj2v66i6bwnbtj5nztsz3lw7tg4horj3uwkamplmmzi5iegaqnu.ipfs.dweb.link/"
+                  src={jc}
                   alt=""
                   srcset=""
                 />
@@ -613,43 +555,13 @@ Immutable have partnered with TikTok, Veve and Opensea. You can find out more ab
               </StyledNode>
               <StyledNode>
                 <img
-                  src="https://cdn.discordapp.com/attachments/919383873153028167/921627009208156190/Drip.png"
+                  src={og}
                   alt=""
                   srcset=""
                 />
                 <div className="name">OG</div>
                 <div className="role">Management Lead</div>
                 <div className="role">
-                  {/* <TwitterIcon style={{ cursor: "pointer" }} /> */}
-                </div>
-              </StyledNode>
-              <StyledNode>
-                <img
-                  src="https://bafkreiaol6xc4sr5bwdgwqoxeroczgwdvuan4snjiniqxvh4dav3gfm4sm.ipfs.dweb.link/"
-                  alt=""
-                  srcset=""
-                />
-                <div className="name">Jake aka YOLO</div>
-                <div className="role">Communications</div>
-                <div className="role">
-                  <a href="https://twitter.com/JakeYoloxD">
-                    <TwitterIcon style={{ cursor: "pointer" }} />
-                  </a>
-                  {/* <TwitterIcon style={{ cursor: "pointer" }} /> */}
-                </div>
-              </StyledNode>
-              <StyledNode>
-                <img
-                  src="https://bafkreig2xiowokslu7fgrx2jld6sgmfu7a64hxhoshn2rjrtsllfg4ufjq.ipfs.dweb.link/"
-                  alt=""
-                  srcset=""
-                />
-                <div className="name">Jake</div>
-                <div className="role">Marketing Lead</div>
-                <div className="role">
-                  <a href="https://twitter.com/juicyjakee">
-                    <TwitterIcon style={{ cursor: "pointer" }} />
-                  </a>
                   {/* <TwitterIcon style={{ cursor: "pointer" }} /> */}
                 </div>
               </StyledNode>
