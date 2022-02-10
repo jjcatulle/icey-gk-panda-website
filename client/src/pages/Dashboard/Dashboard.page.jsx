@@ -31,6 +31,7 @@ import Grid from "@mui/material/Grid";
 
 import web3 from "../../ethereum/web3";
 import Contracts from "../../ethereum/contractsInterface";
+import banner from "../../assets/img/bg/Website_Banner.png";
 
 const CollectionGrid = () => {
   const [items, setitems] = useState([]);
@@ -184,7 +185,7 @@ const DashBoard = () => {
         return (
           <DashboardWelcome>
             <div className="title">(Beta) Welcome..</div>
-            <div className="">
+            <div className="dashboard-wp">
               This dashboard will include tools to help you manage your
               membership as a Panda holder
             </div>
@@ -235,6 +236,10 @@ const DashBoard = () => {
           {/* <TagIcon onClick={() => setcurrentPage("social")} /> */}
         </SideBarCtn>
         <MainBody>
+        <div className="site-bg">
+          <img src={banner} alt="IceyPandaz" style={{width: "100%", height: "100%"}} />
+        </div>
+
           <div className="header">
             <div className="name">Icey Pandaz</div>
             <div className="button" onClick={() => {}}>

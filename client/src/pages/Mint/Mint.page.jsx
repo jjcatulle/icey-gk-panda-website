@@ -72,7 +72,7 @@ function MintingPage() {
           color: "#36B0FF",
         }}
       >
-        Geek Pandaz
+        Icey Pandaz
       </div>
       <h1>Icey Pandaz Mint</h1>
 

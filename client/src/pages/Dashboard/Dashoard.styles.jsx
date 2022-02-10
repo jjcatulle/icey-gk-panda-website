@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const DashboardCtn = styled.div`
+  position: relative;
   width: 100vw;
 `;
 
@@ -39,7 +40,7 @@ export const DashboardContents = styled.div`
 export const SideBarCtn = styled.div`
   height: 100vh;
   width: 70px;
-  background-image: linear-gradient(to bottom, rgba(178, 44, 0, 0.5), #36B0FF);
+  background-color: #36B0FF;
   color: white;
   display: flex;
   flex-direction: column;
@@ -64,9 +65,28 @@ export const MainBody = styled.div`
   display: flex;
   flex-direction: column;
   flex: 1;
-  background: blue;
+  background: transparent;
+
+  .site-bg {
+    /* position: fixed; 
+    top: 0; 
+    left: 0; 
+    min-width: 100%;
+    min-height: 100%;
+    background: url(../../assets/img/bg/Website_Banner.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    z-index: 1000; */
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    overflow: hidden;
+    object-fit: cover;
+  }
 
   .header {
+    position: relative;
     width: 100%;
     height: 60px;
     background: white;
@@ -78,7 +98,7 @@ export const MainBody = styled.div`
     font-size: 20px;
     font-weight: 900;
     border-bottom: 1px solid grey;
-
+    z-index: 20;
     .button {
       color: white;
       border-radius: 10px;
@@ -92,23 +112,34 @@ export const MainBody = styled.div`
   }
 
   .body {
-    background: white;
+    // background: white;
     flex: 1;
   }
 `;
 
 export const DashboardWelcome = styled.div`
+  position: relative;
+  display: none;
   margin: auto;
   margin-top: 100px;
-  background-image: linear-gradient(125deg, rgba(178, 44, 0, 0.5), #36B0FF);
-  // color:white;
+  background-color: #36B0FF;
+  color: white;
   width: 600px;
   font-size: 20px;
   padding: 20px;
+  opacity: 0.8;
+  z-index: 20;
 
   .title {
+    position: relative;
     font-weight: 900;
     font-size: 40px;
+    z-index: 25;
+  }
+
+  .title,
+  .dashboard-wp {
+    text-shadow: 2px 2px #3E403D;
   }
 
   @media screen and (max-width: 800px) {

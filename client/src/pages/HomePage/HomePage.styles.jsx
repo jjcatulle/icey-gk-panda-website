@@ -284,8 +284,8 @@ export const TimeLineCtn = styled.div`
       }
 
       .mobile{
-        display:flex;
-        flex-direction:column;
+        display: flex;
+        flex-direction: column;
       }
     }
   }
@@ -312,7 +312,7 @@ export const TimeLineItemCtn = styled.div`
 
   @media screen and (max-width: 800px) {
     padding: 5px;
-    border: 1px solid #ae2e07;
+    border: 1px solid #36B0FF;
     margin-top:20px;
     .mytitle {
       font-size: 20px;
