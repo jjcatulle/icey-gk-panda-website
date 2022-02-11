@@ -237,6 +237,7 @@ const DashBoard = () => {
         </SideBarCtn>
         <MainBody>
         <div className="site-bg">
+          <div className="overlay"></div>
           <img src={banner} alt="IceyPandaz" style={{width: "100%", height: "100%"}} />
         </div>
 

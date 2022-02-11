@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Typewriter from "typewriter-effect";
 
-import banner from "../../assets/img/bg/Website_Banner.png";
+import promoVideo from "../../assets/video/Icey_panda_1920_1080_px.mp4";
 
 import { Bottom, Top } from "../../global.styles";
 import {
@@ -315,7 +315,7 @@ const HomePage = () => {
   const navigate = useNavigate();
   // const [audio] = useState(new Audio({song}));
 
-  // const [mute, setmute] = useState(true);
+  const [mute, setmute] = useState(true);
   const [slide, setslide] = useState({
     interval: null,
     slideIndex: 0,
@@ -344,9 +344,9 @@ const HomePage = () => {
     }, 1000);
   }, [slide]);
 
-  // const toggleMuteBtn = () => {
-  //   setmute(!mute);
-  // };
+  const toggleMuteBtn = () => {
+    setmute(!mute);
+  };
 
   // useEffect(() => {
   //   !mute ? audio.play() : audio.pause();
@@ -363,8 +363,8 @@ const HomePage = () => {
     <HomePageCtn>
       <LandingCtn>
         <Bottom>
-          <VideoCtn>
-            <img src={banner} alt="IceyPandaz" style={{width: "100%", height: "100%"}} />
+          <VideoCtn autoPlay muted={mute} loop>
+            <source src={promoVideo} type="video/mp4" />
           </VideoCtn>
         </Bottom>
         <Top>

@@ -38,6 +38,7 @@ export const DashboardContents = styled.div`
 `;
 
 export const SideBarCtn = styled.div`
+  position: relative;
   height: 100vh;
   width: 70px;
   background-color: #36B0FF;
@@ -47,6 +48,7 @@ export const SideBarCtn = styled.div`
   align-items: center;
   font-size: 56px;
   padding-top: 20px;
+  z-index: 20;
 
   & > * {
     // background: red;
@@ -85,6 +87,16 @@ export const MainBody = styled.div`
     object-fit: cover;
   }
 
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.5;
+  }
+
   .header {
     position: relative;
     width: 100%;
@@ -99,6 +111,7 @@ export const MainBody = styled.div`
     font-weight: 900;
     border-bottom: 1px solid grey;
     z-index: 20;
+
     .button {
       color: white;
       border-radius: 10px;
@@ -153,6 +166,8 @@ export const DashboardWelcome = styled.div`
 `;
 
 export const CollectionGridCtn = styled.div`
+  position: relative;
+  z-index: 20;
   // background: red;
   display: grid;
   height: 90vh;
@@ -174,6 +189,8 @@ export const PopUPCtn = styled.div`
 `;
 
 export const StakingCtn = styled.div`
+  position: relative;
+  z-index: 20;
   width: 100%;
   height: 100%;
   display: flex;
@@ -181,6 +198,7 @@ export const StakingCtn = styled.div`
   align-items: center;
   padding: 0 80px;
   padding-top: 20px;
+  color: #fff;
 
   .details-ctn {
     display: flex;

@@ -51,7 +51,7 @@ export const LandingCtn = styled.div`
   height: 100vh;
 `;
 
-export const VideoCtn = styled.div`
+export const VideoCtn = styled.video`
   position: fixed;
   width: 100%;
   height: 100%;
@@ -101,7 +101,7 @@ export const LogoCtnItems = styled.div`
     cursor: pointer;
     overflow: hidden;
     outline: none;
-    border-radius: ;
+    // border-radius: ;
     margin: 20px 0;
     border-radius: 10px;
   }
@@ -420,7 +420,7 @@ export const StyledNode = styled.div`
 
     background: #36B0FF;
     width: 100%;
-    height: auto:
+    height: auto;
     object-fit: cover;
   }
   .role{
