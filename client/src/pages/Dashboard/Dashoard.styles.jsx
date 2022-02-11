@@ -61,6 +61,19 @@ export const SideBarCtn = styled.div`
       transform: scale(1.2);
     }
   }
+
+  a {
+    color: #fff;
+    
+    & > * {
+      font-size: 56px;
+      transform: scale(1.2);
+      cursor: pointer;
+
+    &:active {
+      transform: scale(1.2);
+    }
+  }  }
 `;
 
 export const MainBody = styled.div`
