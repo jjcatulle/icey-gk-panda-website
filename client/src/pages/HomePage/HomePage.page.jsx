@@ -37,11 +37,11 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkIcon from "@mui/icons-material/Link";
 
 // import song from "../../assets/audio/bensound-dubstep.mp3";
-import fish from "../../assets/img/profiles/fish.png";
+import fish from "../../assets/img/profiles/fishnew.png";
 import jc from "../../assets/img/profiles/jc.jfif";
 import og from "../../assets/img/profiles/og.png";
 import strange from "../../assets/img/projects/strange-creatures.jpg";
-import rovers from "../../assets/img/projects/imx-rovers.png";
+import rovers from "../../assets/img/projects/imx-rovers-new.png";
 import rarity from "../../assets/img/projects/imx-rarity.jpg";
 import acrona from "../../assets/img/projects/acrona-city.png";
 
@@ -454,7 +454,6 @@ const HomePage = () => {
                   src={rovers}
                   alt="IMX Rovers"
                   srcset=""
-                  style={{width: "196.21px", height: "196.21px"}}
                 />
                 <div className="name">IMX Rovers</div>
                 <div className="role">Project</div>
@@ -488,7 +487,6 @@ const HomePage = () => {
                   src={acrona}
                   alt="Acrona City"
                   srcset=""
-                  style={{width: "196.21px", height: "196.21px"}}
                 />
                 <div className="name">Acrona City</div>
                 <div className="role">Partner</div>
@@ -503,7 +501,6 @@ const HomePage = () => {
                   src={rarity}
                   alt="IMX Rarity"
                   srcset=""
-                  style={{width: "196.21px", height: "196.21px"}}
                 />
                 <div className="name">IMX Rarity</div>
                 <div className="role">Partner</div>
