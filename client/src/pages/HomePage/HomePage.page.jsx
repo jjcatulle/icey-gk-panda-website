@@ -393,7 +393,7 @@ const HomePage = () => {
                   loop: true,
                 }}
               />
-              <a href="/mint">Mint</a>
+              {/* <a href="/mint">Mint</a> */}
               {/* <div className="mute" onClick={toggleMuteBtn}>
                 {mute ? "Unmute" : "Mute"} Audio
               </div> */}
