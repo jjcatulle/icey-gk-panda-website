@@ -45,251 +45,253 @@ import rovers from "../../assets/img/projects/imx-rovers-new.png";
 import rarity from "../../assets/img/projects/imx-rarity.jpg";
 import acrona from "../../assets/img/projects/acrona-city.png";
 
-function ColorsTimeline() {
-  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" });
+// function ColorsTimeline() {
+//   const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" });
 
-  return (
-    <Timeline position={isTabletOrMobile ? null : "alternate"}>
-      <TimelineItem>
-        <TimelineSeparator>
-          <TimelineDot
-            style={{
-              background: "#36B0FF",
-              width: "20px",
-              height: "20px",
-            }}
-          />
-          <TimelineConnector />
-        </TimelineSeparator>
-        <TimelineContent>
-          <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" duration={3}>
-            <TimeLineItemCtn>
-              <div className="mytitle">December 2021</div>
-              <ul>
-                <li>
-                  DAO: The Icetopia Council DAO formulates to give every holder
-                  a voice in the project’s direction!
-                </li>
-                <li>
-                  New Website: The website receives a facelift as a new era in
-                  Icetopia begins! The accompanying interactive dashboard will
-                  become available as well.
-                </li>
-              </ul>
-            </TimeLineItemCtn>
-          </ScrollAnimation>
-        </TimelineContent>
-      </TimelineItem>
-      <TimelineItem>
-        <TimelineSeparator>
-          <TimelineDot
-            style={{
-              background: "#36B0FF",
-              width: "20px",
-              height: "20px",
-            }}
-          />
-          <TimelineConnector />
-        </TimelineSeparator>
-        <TimelineContent>
-          <TimelineContent>
-            <ScrollAnimation
-              animateIn="fadeIn"
-              animateOut="fadeOut"
-              duration={3}
-            >
-              <TimeLineItemCtn>
-                <div className="mytitle">January 2022</div>
-                <ul>
-                  <li>Staking: JC, the Head Developer, is putting in overtime for the Pandaz: the $ICE token is coming to life! The development of the staking mechanism is close to completion, and it will be integrated into the dashboard, which will include future drops and Icey Pandaz-exclusive merchandise. </li>
-                  <li>
-                  Expansion: The team aims to use this time to work on partnerships and collaborations to grow and strengthen the community. This includes other projects like Acrona City, IMX Squirrels, and MANY MORE! 
-                  </li>
-                  <li>
-                  Launchpad: There will be projects launching off of Icey Pandaz, such as the IMX ROVERS! Icey Pandaz holders will receive whitelist spots and other potential perks for staking their panda and verifying on the website.
-                  </li>
-                  <li>
-                  Gaming Teams/Guilds: The Icey Panda holders can join gaming teams and guilds that we partner with!                  </li>
+//   return (
+//     <Timeline position={isTabletOrMobile ? null : "alternate"}>
+//       <TimelineItem>
+//         <TimelineSeparator>
+//           <TimelineDot
+//             style={{
+//               background: "#36B0FF",
+//               width: "20px",
+//               height: "20px",
+//             }}
+//           />
+//           <TimelineConnector />
+//         </TimelineSeparator>
+//         <TimelineContent>
+//           <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" duration={3}>
+//             <TimeLineItemCtn>
+//               <div className="mytitle">December 2021</div>
+//               <ul>
+//                 <li>
+//                   DAO: The Icetopia Council DAO formulates to give every holder
+//                   a voice in the project’s direction!
+//                 </li>
+//                 <li>
+//                   New Website: The website receives a facelift as a new era in
+//                   Icetopia begins! The accompanying interactive dashboard will
+//                   become available as well.
+//                 </li>
+//               </ul>
+//             </TimeLineItemCtn>
+//           </ScrollAnimation>
+//         </TimelineContent>
+//       </TimelineItem>
+//       <TimelineItem>
+//         <TimelineSeparator>
+//           <TimelineDot
+//             style={{
+//               background: "#36B0FF",
+//               width: "20px",
+//               height: "20px",
+//             }}
+//           />
+//           <TimelineConnector />
+//         </TimelineSeparator>
+//         <TimelineContent>
+//           <TimelineContent>
+//             <ScrollAnimation
+//               animateIn="fadeIn"
+//               animateOut="fadeOut"
+//               duration={3}
+//             >
+//               <TimeLineItemCtn>
+//                 <div className="mytitle">January 2022</div>
+//                 <ul>
+//                   <li>Staking: JC, the Head Developer, is putting in overtime for the Pandaz: the $ICE token is coming to life! The development of the staking mechanism is close to completion, and it will be integrated into the dashboard, which will include future drops and Icey Pandaz-exclusive merchandise. </li>
+//                   <li>
+//                   Expansion: The team aims to use this time to work on partnerships and collaborations to grow and strengthen the community. This includes other projects like Acrona City, IMX Squirrels, and MANY MORE! 
+//                   </li>
+//                   <li>
+//                   Launchpad: There will be projects launching off of Icey Pandaz, such as the IMX ROVERS! Icey Pandaz holders will receive whitelist spots and other potential perks for staking their panda and verifying on the website.
+//                   </li>
+//                   <li>
+//                   Gaming Teams/Guilds: The Icey Panda holders can join gaming teams and guilds that we partner with!                  </li>
                   
-                </ul>
-              </TimeLineItemCtn>
-            </ScrollAnimation>
-          </TimelineContent>
-        </TimelineContent>
-      </TimelineItem>
-      <TimelineItem>
-        <TimelineSeparator>
-          <TimelineDot
-            style={{
-              background: "#36B0FF",
-              width: "20px",
-              height: "20px",
-            }}
-          />
-          <TimelineConnector />
-        </TimelineSeparator>
-        <TimelineContent>
-          <TimelineContent>
-            <ScrollAnimation
-              animateIn="fadeIn"
-              animateOut="fadeOut"
-              duration={3}
-            >
-              <TimeLineItemCtn>
-                <div className="mytitle">February 2022</div>
-                <ul>
-                  <li>
-                  Community Games: Icey Pandaz will host regular tournaments for holders to compete in AAA games and there will be massive prize pools of $ICE up for grabs! Livestream tournaments will allow viewers to earn additional $ICE!
-                  </li>
-                  <li>Merchandise: A store will open with unique prizes to be bought with the $ICE token!!</li>
-                  <li>Community Wallet: A MetaPandaz Community Chest will be opened and seeded with ETH. Holders will be able to vote to launch experiences, activations, and campaigns that benefit the entire Pandaz ecosystem.</li>
-                </ul>
-              </TimeLineItemCtn>
-            </ScrollAnimation>
-          </TimelineContent>
-        </TimelineContent>
-      </TimelineItem>
-      <TimelineItem>
-        <TimelineSeparator>
-          <TimelineDot
-            style={{
-              background: "#36B0FF",
-              width: "20px",
-              height: "20px",
-            }}
-          />
-          <TimelineConnector />
-        </TimelineSeparator>
-        <TimelineContent>
-          <TimelineContent>
-            <ScrollAnimation
-              animateIn="fadeIn"
-              animateOut="fadeOut"
-              duration={3}
-            >
-              <TimeLineItemCtn>
-                <div className="mytitle">March 2022</div>
-                <ul>
-                  <li>
-                  New Collection: There will be a new generation of 3-D Icey Pandaz on OpensSea
-                  </li>
-                  <li>
-                  Breeding: It’s time for the mating season! Panda holders can utilize their $ICE tokens and breed (with the requirement of having at least two) to produce a unique baby Meta Panda. The Icey Pandaz team will release an additional supply of Meta Pandaz for the public to mint, allowing new members to join our community.</li>
-                </ul>
-              </TimeLineItemCtn>
-            </ScrollAnimation>
-          </TimelineContent>
-        </TimelineContent>
-      </TimelineItem>
-      <TimelineItem>
-        <TimelineSeparator>
-          <TimelineDot
-            style={{
-              background: "#36B0FF",
-              width: "20px",
-              height: "20px",
-            }}
-          />
-        </TimelineSeparator>
-        <TimelineContent>
-          <TimelineContent>
-            <ScrollAnimation
-              animateIn="fadeIn"
-              animateOut="fadeOut"
-              duration={3}
-            >
-              <TimeLineItemCtn>
-                <div className="mytitle">April 2022</div>
-                <ul>
-                  <li>
-                  $ICE will be able to be used to level up your Gen 2 Pandaz. With a unique Tier system to unlock special features of your Pandaz.
-                  </li>
-                  <li>
-                    There will be much more in the future. Stay tuned for
-                    updates on the roadmap!
-                  </li>
-                </ul>
-              </TimeLineItemCtn>
-            </ScrollAnimation>
-          </TimelineContent>
-        </TimelineContent>
-      </TimelineItem>
-    </Timeline>
-  );
-}
+//                 </ul>
+//               </TimeLineItemCtn>
+//             </ScrollAnimation>
+//           </TimelineContent>
+//         </TimelineContent>
+//       </TimelineItem>
+//       <TimelineItem>
+//         <TimelineSeparator>
+//           <TimelineDot
+//             style={{
+//               background: "#36B0FF",
+//               width: "20px",
+//               height: "20px",
+//             }}
+//           />
+//           <TimelineConnector />
+//         </TimelineSeparator>
+//         <TimelineContent>
+//           <TimelineContent>
+//             <ScrollAnimation
+//               animateIn="fadeIn"
+//               animateOut="fadeOut"
+//               duration={3}
+//             >
+//               <TimeLineItemCtn>
+//                 <div className="mytitle">February 2022</div>
+//                 <ul>
+//                   <li>
+//                   Community Games: Icey Pandaz will host regular tournaments for holders to compete in AAA games and there will be massive prize pools of $ICE up for grabs! Livestream tournaments will allow viewers to earn additional $ICE!
+//                   </li>
+//                   <li>Merchandise: A store will open with unique prizes to be bought with the $ICE token!!</li>
+//                   <li>Community Wallet: A MetaPandaz Community Chest will be opened and seeded with ETH. Holders will be able to vote to launch experiences, activations, and campaigns that benefit the entire Pandaz ecosystem.</li>
+//                 </ul>
+//               </TimeLineItemCtn>
+//             </ScrollAnimation>
+//           </TimelineContent>
+//         </TimelineContent>
+//       </TimelineItem>
+//       <TimelineItem>
+//         <TimelineSeparator>
+//           <TimelineDot
+//             style={{
+//               background: "#36B0FF",
+//               width: "20px",
+//               height: "20px",
+//             }}
+//           />
+//           <TimelineConnector />
+//         </TimelineSeparator>
+//         <TimelineContent>
+//           <TimelineContent>
+//             <ScrollAnimation
+//               animateIn="fadeIn"
+//               animateOut="fadeOut"
+//               duration={3}
+//             >
+//               <TimeLineItemCtn>
+//                 <div className="mytitle">March 2022</div>
+//                 <ul>
+//                   <li>
+//                   New Collection: There will be a new generation of 3-D Icey Pandaz on OpensSea
+//                   </li>
+//                   <li>
+//                   Breeding: It’s time for the mating season! Panda holders can utilize their $ICE tokens and breed (with the requirement of having at least two) to produce a unique baby Meta Panda. The Icey Pandaz team will release an additional supply of Meta Pandaz for the public to mint, allowing new members to join our community.</li>
+//                 </ul>
+//               </TimeLineItemCtn>
+//             </ScrollAnimation>
+//           </TimelineContent>
+//         </TimelineContent>
+//       </TimelineItem>
+//       <TimelineItem>
+//         <TimelineSeparator>
+//           <TimelineDot
+//             style={{
+//               background: "#36B0FF",
+//               width: "20px",
+//               height: "20px",
+//             }}
+//           />
+//         </TimelineSeparator>
+//         <TimelineContent>
+//           <TimelineContent>
+//             <ScrollAnimation
+//               animateIn="fadeIn"
+//               animateOut="fadeOut"
+//               duration={3}
+//             >
+//               <TimeLineItemCtn>
+//                 <div className="mytitle">April 2022</div>
+//                 <ul>
+//                   <li>
+//                   $ICE will be able to be used to level up your Gen 2 Pandaz. With a unique Tier system to unlock special features of your Pandaz.
+//                   </li>
+//                   <li>
+//                     There will be much more in the future. Stay tuned for
+//                     updates on the roadmap!
+//                   </li>
+//                 </ul>
+//               </TimeLineItemCtn>
+//             </ScrollAnimation>
+//           </TimelineContent>
+//         </TimelineContent>
+//       </TimelineItem>
+//     </Timeline>
+//   );
+// }
 
-function MobileColorsTimeline() {
-  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" });
+// function MobileColorsTimeline() {
+//   const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" });
 
-  return (
-    <>
-      <TimeLineItemCtn>
-        <div className="mytitle">December 2021</div>
-          <ul>
-            <li>
-              DAO: The Icetopia Council DAO formulates to give every holder
-              a voice in the project’s direction!
-            </li>
-            <li>
-              New Website: The website receives a facelift as a new era in
-              Icetopia begins! The accompanying interactive dashboard will
-              become available as well.
-            </li>
-          </ul>
-      </TimeLineItemCtn>
+//   return (
+//     <>
+//       <TimeLineItemCtn>
+//         <div className="mytitle">December 2021</div>
+//           <ul>
+//             <li>
+//               DAO: The Icetopia Council DAO formulates to give every holder
+//               a voice in the project’s direction!
+//             </li>
+//             <li>
+//               New Website: The website receives a facelift as a new era in
+//               Icetopia begins! The accompanying interactive dashboard will
+//               become available as well.
+//             </li>
+//           </ul>
+//       </TimeLineItemCtn>
 
-      <TimeLineItemCtn>
-        <div className="mytitle">January 2022</div>
-          <ul>
-            <li>Staking: JC, the Head Developer, is putting in overtime for the Pandaz: the $ICE token is coming to life! The development of the staking mechanism is close to completion, and it will be integrated into the dashboard, which will include future drops and Icey Pandaz-exclusive merchandise. </li>
-            <li>
-            Expansion: The team aims to use this time to work on partnerships and collaborations to grow and strengthen the community. This includes other projects like Acrona City, IMX Squirrels, and MANY MORE! 
-            </li>
-            <li>
-            Launchpad: There will be projects launching off of Icey Pandaz, such as the IMX ROVERS! Icey Pandaz holders will receive whitelist spots and other potential perks for staking their panda and verifying on the website.
-            </li>
-            <li>
-            Gaming Teams/Guilds: The Icey Panda holders can join gaming teams and guilds that we partner with!                  </li>
+//       <TimeLineItemCtn>
+//         <div className="mytitle">January 2022</div>
+//           <ul>
+//             <li>Staking: JC, the Head Developer, is putting in overtime for the Pandaz: the $ICE token is coming to life! The development of the staking mechanism is close to completion, and it will be integrated into the dashboard, which will include future drops and Icey Pandaz-exclusive merchandise. </li>
+//             <li>
+//             Expansion: The team aims to use this time to work on partnerships and collaborations to grow and strengthen the community. This includes other projects like Acrona City, IMX Squirrels, and MANY MORE! 
+//             </li>
+//             <li>
+//             Launchpad: There will be projects launching off of Icey Pandaz, such as the IMX ROVERS! Icey Pandaz holders will receive whitelist spots and other potential perks for staking their panda and verifying on the website.
+//             </li>
+//             <li>
+//             Gaming Teams/Guilds: The Icey Panda holders can join gaming teams and guilds that we partner with!                  </li>
             
-          </ul>
-      </TimeLineItemCtn>
-      <TimeLineItemCtn>
-        <div className="mytitle">February 2022</div>
-        <ul>
-          <li>
-            Community Games: Icey Pandaz will host regular tournaments for holders to compete in AAA games and there will be massive prize pools of $ICE up for grabs! Livestream tournaments will allow viewers to earn additional $ICE!
-          </li>
-          <li>Merchandise: A store will open with unique prizes to be bought with the $ICE token!!</li>
-          <li>Community Wallet: A MetaPandaz Community Chest will be opened and seeded with ETH. Holders will be able to vote to launch experiences, activations, and campaigns that benefit the entire Pandaz ecosystem.</li>
-        </ul>
-      </TimeLineItemCtn>
+//           </ul>
+//       </TimeLineItemCtn>
+//       <TimeLineItemCtn>
+//         <div className="mytitle">February 2022</div>
+//         <ul>
+//           <li>
+//             Community Games: Icey Pandaz will host regular tournaments for holders to compete in AAA games and there will be massive prize pools of $ICE up for grabs! Livestream tournaments will allow viewers to earn additional $ICE!
+//           </li>
+//           <li>Merchandise: A store will open with unique prizes to be bought with the $ICE token!!</li>
+//           <li>Community Wallet: A MetaPandaz Community Chest will be opened and seeded with ETH. Holders will be able to vote to launch experiences, activations, and campaigns that benefit the entire Pandaz ecosystem.</li>
+//         </ul>
+//       </TimeLineItemCtn>
 
-      <TimeLineItemCtn>
-        <div className="mytitle">March 2022</div>
-        <ul>
-          <li>
-            New Collection: There will be a new generation of 3-D Icey Pandaz on OpensSea
-          </li>
-          <li>
-            Breeding: It’s time for the mating season! Panda holders can utilize their $ICE tokens and breed (with the requirement of having at least two) to produce a unique baby Meta Panda. The Icey Pandaz team will release an additional supply of Meta Pandaz for the public to mint, allowing new members to join our community.</li>
-        </ul>
-      </TimeLineItemCtn>
+//       <TimeLineItemCtn>
+//         <div className="mytitle">March 2022</div>
+//         <ul>
+//           <li>
+//             New Collection: There will be a new generation of 3-D Icey Pandaz on OpensSea
+//           </li>
+//           <li>
+//             Breeding: It’s time for the mating season! Panda holders can utilize their $ICE tokens and breed (with the requirement of having at least two) to produce a unique baby Meta Panda. The Icey Pandaz team will release an additional supply of Meta Pandaz for the public to mint, allowing new members to join our community.</li>
+//         </ul>
+//       </TimeLineItemCtn>
 
-      <TimeLineItemCtn>
-        <div className="mytitle">April 2022</div>
-          <ul>
-            <li>
-            $ICE will be able to be used to level up your Gen 2 Pandaz. With a unique Tier system to unlock special features of your Pandaz.
-            </li>
-            <li>
-              There will be much more in the future. Stay tuned for
-              updates on the roadmap!
-            </li>
-          </ul>
-      </TimeLineItemCtn>
-    </>
-  );
-}
+//       <TimeLineItemCtn>
+//         <div className="mytitle">April 2022</div>
+//           <ul>
+//             <li>
+//             $ICE will be able to be used to level up your Gen 2 Pandaz. With a unique Tier system to unlock special features of your Pandaz.
+//             </li>
+//             <li>
+//               There will be much more in the future. Stay tuned for
+//               updates on the roadmap!
+//             </li>
+//           </ul>
+//       </TimeLineItemCtn>
+//     </>
+//   );
+// }
+
+
 const FaqItem = ({ label = "", text = "" }) => {
   const [show, setshow] = useState(false);
   return (
@@ -407,24 +409,43 @@ const HomePage = () => {
                 duration={3}
               >
                 <div className="content">
-                  <div className="title">
-                    The IceyPandaz are a Genesis collection of 800 unique NFTs
-                    on Opensea ready to take over the Icetopia universe.
+                  <div className="title main">
+                    Icey Pandaz NFT Game Launchpad
                   </div>
                   <div className="description">
-                    It all starts with the Genesis IceyPandaz mint. The
-                    Icetopian family grows together, and the proceeds of this
-                    mint will be used to fund a launchpad for blockchain games.
-                    We believe that the blockchain will revolutionize
-                    play-to-earn gaming by introducing transparency, ownership,
-                    incentive models, and NFTs to the space. We see the
-                    Icetopian family as having a major role to play in the
-                    growth and evolution of this space.
+                    We strive for nothing but the best quality in project launching. Our Team consists of experienced  Developers and advisors here to help you! We can help with roadmap, Advising, creating websites, smart contracts, Tokenomics, and overall customer satisfaction!  We here at Icey Pandaz are a strong go getter team constantly looking for new projects.                  
                   </div>
+
+                  <div className="title">
+                  Block Chains 
+                  </div>
+                  <div className="description">
+                  We currently have projects on 4 different blockchains and are constantly expanding in new realms! Avax,Matic,L2, L1 ETH, are the chains so far! Also if you have any questions we are always here to advise on pros and cons of different blockchains!                  </div>
+                  
+                  <div className="title">
+                  Smart Contracts/ Tokenomics
+                  </div>
+                  <div className="description">
+                  Icey Pandaz stays up to date with what is in Meta! Our Back end Developer has been working in this space for over 5 years. We use the most up to date and gas efficient Smart Contracts For our clients and their investors! We are always open to showing you which contracts and why you should go with them!                   </div>
+                  
+                  <div className="title">
+                    Website
+                  </div>
+                  <div className="description">
+                  Our Software engineer has been creating sites for over 14 years! You think it, they will build it! We are always open to challenges and awesome new concepts to build!                   </div>
+                  <div className="title">
+                    Advising
+                  </div>
+                  <div className="description">
+                  We have a very knowledgeable team here to assist on roadmaps and or direction to take projects. We also assist in Discord set up and showing you the ropes of creating an organic community!                  </div>
+
+
                 </div>
+
+                
               </ScrollAnimation>
             </div>
-            <div className="about-image">
+            {/* <div className="about-image">
               <ScrollAnimation
                 animateIn="fadeIn"
                 animateOut="bounceOutRight"
@@ -432,9 +453,11 @@ const HomePage = () => {
               >
                 <img src="https://media.discordapp.net/attachments/937537796095229962/941156043117973564/Webp.net-gifmaker_5.gif" alt="" srcset="" />
               </ScrollAnimation>
-            </div>
+            </div> */}
           </AboutCtn>
-          <TimeLineCtn>
+          
+          
+          {/* <TimeLineCtn>
             <div className="items">
               <div className="title">ROADMAP 1.0</div>
               <div className="desktop">
@@ -444,7 +467,7 @@ const HomePage = () => {
                 <MobileColorsTimeline />
               </div>
             </div>
-          </TimeLineCtn>
+          </TimeLineCtn> */}
           
           <TeamCtn>
             <div className="title">Projects</div>
@@ -512,7 +535,7 @@ const HomePage = () => {
               </StyledNode>
             </div>
           </TeamCtn>
-          <FaqsCtn>
+          {/* <FaqsCtn>
             <div className="title">FAQ</div>
             <div className="items">
               <FaqItem
@@ -526,7 +549,7 @@ const HomePage = () => {
 Immutable have partnered with TikTok, Veve and Opensea. You can find out more about their platform here: https://www.immutable.com/ and here: https://immutablex.medium.com/.'
               />
             </div>
-          </FaqsCtn>
+          </FaqsCtn> */}
 
           <TeamCtn>
             <div className="title">The Team</div>

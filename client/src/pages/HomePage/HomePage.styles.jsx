@@ -161,7 +161,9 @@ export const AboutCtn = styled.div`
 
   .about-info,
   .about-image {
-    width: 50%;
+    /* width: 50%; */
+    width: 100%;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -172,7 +174,9 @@ export const AboutCtn = styled.div`
     align-items: flex-end;
     padding-right: 50px;
     .content {
-      width: 500px;
+      /* width: 500px; */
+      width: 70%;
+      margin: 0 auto;
       //   background: red;
 
       .title {
@@ -180,8 +184,15 @@ export const AboutCtn = styled.div`
         font-size: 26px;
         color: #36B0FF;
       }
+
+      .title.main {
+        font-size: 46px;
+        text-align: center;
+      }
+
       .description {
-        margin-top: 12px;
+        margin-top: 20px;
+        margin-bottom: 40px;
         font-size: 20px;
       }
     }
