@@ -41,7 +41,14 @@ export const AppBarCtn = styled.div`
 
   @media screen and (max-width: 800px) {
     justify-content: center;
+
+    .logo {
+      margin: 15px 0 0 0;
+    }
+
     .contents {
+      justify-content: space-around;
+      align-items: end;
       margin-right: 0px;
     }
   }
