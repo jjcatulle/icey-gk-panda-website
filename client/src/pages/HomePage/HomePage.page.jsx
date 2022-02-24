@@ -409,7 +409,8 @@ const HomePage = () => {
             <div className="about-info">
               <ScrollAnimation
                 animateIn="fadeIn"
-                animateOut="fadeOut"
+                initiallyVisible={true}
+                animateOnce={true}
                 duration={3}
               >
                 <div className="content">
