@@ -44,6 +44,7 @@ import strange from "../../assets/img/projects/strange-creatures.jpg";
 import rovers from "../../assets/img/projects/imx-rovers-new.png";
 import rarity from "../../assets/img/projects/imx-rarity.jpg";
 import acrona from "../../assets/img/projects/acrona-city.png";
+import logo from "../../assets/img/logo.png";
 
 // function ColorsTimeline() {
 //   const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" });
@@ -371,6 +372,9 @@ const HomePage = () => {
         </Bottom>
         <Top>
           <AppBarCtn>
+            <div className="logo">
+            <img src={logo} className="bi" width="60" height="48" aria-label="Bunks NFT" alt="Bunks NFT" />
+            </div>
             <div className="contents">
               <a href="https://twitter.com/IceyPandaz" target="_blank" rel="noreferrer" className="item">
                 Twitter
@@ -385,7 +389,7 @@ const HomePage = () => {
             <LogoCtnItems>
               <div className="name-company">ICEYPANDAZ</div>
 
-              <Typewriter
+              {/* <Typewriter
                 className="type"
                 options={{
                   strings: [
@@ -394,7 +398,7 @@ const HomePage = () => {
                   autoStart: true,
                   loop: true,
                 }}
-              />
+              /> */}
               {/* <a href="/mint">Mint</a> */}
               {/* <div className="mute" onClick={toggleMuteBtn}>
                 {mute ? "Unmute" : "Mute"} Audio

@@ -4,19 +4,25 @@ export const AppBarCtn = styled.div`
   color: white;
   font-family: "ZCOOL XiaoWei", serif;
   // background: rgba(17, 17, 17, 0.75);
-  width: 100vw;
+  width: 100%;
   height: 50px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   position: fixed;
   z-index: 10000000000;
 
+  .logo {
+    display: flex;
+    align-items: start;
+    margin: 10px 0 0 50px;
+  }
   .contents {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     width: 400px;
     margin-right: 50px;
+    
     .item {
       cursor: pointer;
       color: white;
