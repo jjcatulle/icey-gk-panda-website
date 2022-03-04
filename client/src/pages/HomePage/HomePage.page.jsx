@@ -45,6 +45,7 @@ import rovers from "../../assets/img/projects/imx-rovers-new.png";
 import rarity from "../../assets/img/projects/imx-rarity.jpg";
 import acrona from "../../assets/img/projects/acrona-city.png";
 import logo from "../../assets/img/logo.png";
+import luxe from "../../assets/img/projects/luxee.jpg";
 
 // function ColorsTimeline() {
 //   const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" });
@@ -501,6 +502,20 @@ const HomePage = () => {
                 <div className="role">Project</div>
                 <div className="role">
                   <a href="https://strangecreatures.io/" target="_blank" rel="noreferrer">
+                    <LinkIcon style={{ cursor: "pointer" }} />
+                  </a>
+                </div>
+              </StyledNode>
+              <StyledNode>
+                <img
+                  src={luxe}
+                  alt="Luxe Ladies"
+                  srcset=""
+                />
+                <div className="name">Luxe Ladies</div>
+                <div className="role">Project</div>
+                <div className="role">
+                  <a href="https://www.luxeladiesnft.com/" target="_blank" rel="noreferrer">
                     <LinkIcon style={{ cursor: "pointer" }} />
                   </a>
                 </div>
