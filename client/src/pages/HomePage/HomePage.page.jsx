@@ -584,7 +584,7 @@ Immutable have partnered with TikTok, Veve and Opensea. You can find out more ab
                   src="https://media.discordapp.net/attachments/926597475295461436/931664657939329044/inconnu.png?width=1138&height=1138"
                   alt=""
                   srcset=""
-                  onClick={()=>{
+                  onClick={() => {
                     window.location.href =
                       "https://forms.gle/QGbDbdFExUKseWDQ6";
                   }}
@@ -648,6 +648,21 @@ Immutable have partnered with TikTok, Veve and Opensea. You can find out more ab
                 <div className="role">Marketing Lead</div>
                 <div className="role">
                   <a href="https://twitter.com/juicyjakee">
+                    <TwitterIcon style={{ cursor: "pointer" }} />
+                  </a>
+                  {/* <TwitterIcon style={{ cursor: "pointer" }} /> */}
+                </div>
+              </StyledNode>
+              <StyledNode>
+                <img
+                  src="https://media.discordapp.net/attachments/937537796095229962/950994757113487390/Meta_Machi.jpg"
+                  alt=""
+                  srcset=""
+                />
+                <div className="name">Matchi</div>
+                <div className="role">Community Manager</div>
+                <div className="role">
+                  <a href="https://twitter.com/MachiStyleo">
                     <TwitterIcon style={{ cursor: "pointer" }} />
                   </a>
                   {/* <TwitterIcon style={{ cursor: "pointer" }} /> */}
