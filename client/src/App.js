@@ -1,5 +1,5 @@
 import { GlobalStyle } from "./global.styles";
-import { Routes, Route, Link, Router } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import React, { lazy, Suspense } from "react";
 
 import CircularProgress from "@mui/material/CircularProgress";
@@ -21,7 +21,7 @@ function CircularIndeterminate() {
           alignContent: "center",
         }}
       >
-        <CircularProgress style={{ color: "#b22c00", margin: "auto" }} />
+        <CircularProgress style={{ color: "#36B0FF", margin: "auto" }} />
       </div>
     </Box>
   );

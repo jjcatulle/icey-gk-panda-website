@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import {
   DashboardContents,
   DashboardCtn,
@@ -21,6 +22,8 @@ import { styled } from "@mui/material/styles";
 
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
+import DashboardIcon from "@mui/icons-material/Dashboard";
+
 import Box from "@mui/material/Box";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
@@ -31,6 +34,7 @@ import Grid from "@mui/material/Grid";
 
 import web3 from "../../ethereum/web3";
 import Contracts from "../../ethereum/contractsInterface";
+import banner from "../../assets/img/bg/Website_Banner.png";
 
 const CollectionGrid = () => {
   const [items, setitems] = useState([]);
@@ -184,7 +188,7 @@ const DashBoard = () => {
         return (
           <DashboardWelcome>
             <div className="title">(Beta) Welcome..</div>
-            <div className="">
+            <div className="dashboard-wp">
               This dashboard will include tools to help you manage your
               membership as a Panda holder
             </div>
@@ -230,11 +234,17 @@ const DashBoard = () => {
     <DashboardCtn>
       <DashboardContents>
         <SideBarCtn>
-          <HomeIcon onClick={() => setcurrentPage("home")} />
+          <Link to="/"><HomeIcon /></Link>
+          <DashboardIcon onClick={() => setcurrentPage("home")} />
           <EmojiEventsIcon onClick={() => setcurrentPage("rewards")} />
           {/* <TagIcon onClick={() => setcurrentPage("social")} /> */}
         </SideBarCtn>
         <MainBody>
+        <div className="site-bg">
+          <div className="overlay"></div>
+          <img src={banner} alt="IceyPandaz" style={{width: "100%", height: "100%"}} />
+        </div>
+
           <div className="header">
             <div className="name">Icey Pandaz</div>
             <div className="button" onClick={() => {}}>
@@ -249,7 +259,7 @@ const DashBoard = () => {
     <DashboardCtn>
       <WelcomeCtn>
         <div className="center">
-          <div className="">Welcome Pandaria Citizen</div>
+          <div className="">Welcome Icetopia Citizen</div>
           <button
             style={{
               cursor: "pointer",

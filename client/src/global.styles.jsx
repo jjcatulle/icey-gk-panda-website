@@ -3,11 +3,11 @@ import styled, { createGlobalStyle } from "styled-components";
 export const GlobalStyle = createGlobalStyle`
 	@import url("https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei&display=swap");
 	body {
-	font-family: 'ZCOOL XiaoWei', serif;
-    font-style: normal;
-	padding: 0px 0px;
-	margin: 0px 0px;
-  background: rgba(17, 17, 17, 1);
+		font-family: 'ZCOOL XiaoWei', serif;
+		font-style: normal;
+		padding: 0px 0px;
+		margin: 0px 0px;
+		background: rgba(17, 17, 17, 1);
 	}
 	a {
 		text-decoration: none;

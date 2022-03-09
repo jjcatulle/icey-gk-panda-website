@@ -69,10 +69,10 @@ function MintingPage() {
       <div
         style={{
           fontSize: "100px",
-          color: "#b22c00",
+          color: "#36B0FF",
         }}
       >
-        Geek Pandaz
+        Icey Pandaz
       </div>
       <h1>Icey Pandaz Mint</h1>
 
@@ -100,8 +100,8 @@ function MintingPage() {
       <div
         style={{
           fontSize: "40px",
-          color: "#b22c00",
-          border: "2px solid #b22c00",
+          color: "#36B0FF",
+          border: "2px solid #36B0FF",
           padding: "10px",
           cursor: "pointer",
           borderRadius: "10px",

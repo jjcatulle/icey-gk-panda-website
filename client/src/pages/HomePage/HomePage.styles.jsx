@@ -4,19 +4,25 @@ export const AppBarCtn = styled.div`
   color: white;
   font-family: "ZCOOL XiaoWei", serif;
   // background: rgba(17, 17, 17, 0.75);
-  width: 100vw;
+  width: 100%;
   height: 50px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   position: fixed;
   z-index: 10000000000;
 
+  .logo {
+    display: flex;
+    align-items: start;
+    margin: 10px 0 0 50px;
+  }
   .contents {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     width: 400px;
     margin-right: 50px;
+    
     .item {
       cursor: pointer;
       color: white;
@@ -35,7 +41,14 @@ export const AppBarCtn = styled.div`
 
   @media screen and (max-width: 800px) {
     justify-content: center;
+
+    .logo {
+      margin: 15px 0 0 0;
+    }
+
     .contents {
+      justify-content: space-around;
+      align-items: end;
       margin-right: 0px;
     }
   }
@@ -52,12 +65,12 @@ export const LandingCtn = styled.div`
 `;
 
 export const VideoCtn = styled.video`
+  position: fixed;
   width: 100%;
   height: 100%;
   z-index: -1000;
   overflow: hidden;
   object-fit: cover;
-  position: fixed;
 
   @media screen and (max-width: 800px) {
   }
@@ -95,13 +108,13 @@ export const LogoCtnItems = styled.div`
     background-repeat: no-repeat;
     font-size: 50px;
     font-weight: 700;
-    color: #ae2e07;
+    color: #36B0FF;
     padding: 10px;
-    border: 4px solid #ae2e07;
+    border: 4px solid #36B0FF;
     cursor: pointer;
     overflow: hidden;
     outline: none;
-    border-radius: ;
+    // border-radius: ;
     margin: 20px 0;
     border-radius: 10px;
   }
@@ -140,7 +153,7 @@ export const LogoCtnItems = styled.div`
     button {
       font-size: 20px;
       font-weight: 500;
-      border: 2px solid #b22c00;
+      border: 2px solid #36B0FF;
     }
 
     .mute {
@@ -161,7 +174,9 @@ export const AboutCtn = styled.div`
 
   .about-info,
   .about-image {
-    width: 50%;
+    /* width: 50%; */
+    width: 100%;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -172,16 +187,25 @@ export const AboutCtn = styled.div`
     align-items: flex-end;
     padding-right: 50px;
     .content {
-      width: 500px;
+      /* width: 500px; */
+      width: 70%;
+      margin: 0 auto;
       //   background: red;
 
       .title {
         font-weight: 700;
         font-size: 26px;
-        color: #b22c00;
+        color: #36B0FF;
       }
+
+      .title.main {
+        font-size: 46px;
+        text-align: center;
+      }
+
       .description {
-        margin-top: 12px;
+        margin-top: 20px;
+        margin-bottom: 40px;
         font-size: 20px;
       }
     }
@@ -195,7 +219,7 @@ export const AboutCtn = styled.div`
       width: 400px;
       height: auto;
       object-fit: cover;
-      border: 5px solid #ae2e07;
+      border: 5px solid #36B0FF;
       border-radius: 10px;
       padding: 15px;
     }
@@ -258,7 +282,7 @@ export const TimeLineCtn = styled.div`
     .title {
       font-weight: 700;
       font-size: 46px;
-      color: #b22c00;
+      color: #36B0FF;
       text-align: center;
     }
     .desktop {
@@ -284,8 +308,8 @@ export const TimeLineCtn = styled.div`
       }
 
       .mobile{
-        display:flex;
-        flex-direction:column;
+        display: flex;
+        flex-direction: column;
       }
     }
   }
@@ -295,13 +319,13 @@ export const TimeLineCtn = styled.div`
 export const TimeLineItemCtn = styled.div`
   color: white;
   font-family: "ZCOOL XiaoWei", serif;
-  border: 3px solid #ae2e07;
+  border: 3px solid #36B0FF;
   border-radius: 10px;
 
   padding: 15px;
 
   .mytitle {
-    color: #b22c00;
+    color: #36B0FF;
     font-size: 26px;
     font-weight: 900;
   }
@@ -312,7 +336,7 @@ export const TimeLineItemCtn = styled.div`
 
   @media screen and (max-width: 800px) {
     padding: 5px;
-    border: 1px solid #ae2e07;
+    border: 1px solid #36B0FF;
     margin-top:20px;
     .mytitle {
       font-size: 20px;
@@ -338,7 +362,7 @@ export const FaqsCtn = styled.div`
   .title {
     font-weight: 700;
     font-size: 46px;
-    color: #b22c00;
+    color: #36B0FF;
     text-align: center;
   }
   .items {
@@ -357,12 +381,12 @@ export const FaqsCtn = styled.div`
 export const FaqItemCtn = styled.div`
   width: 400px;
   padding-bottom: 10px;
-  border-bottom: 2px solid #b22c00;
+  border-bottom: 2px solid #36B0FF;
   width: 65vw;
   margin-top: 30px;
   font-size: 20px;
   .label {
-    color: #b22c00;
+    color: #36B0FF;
     display: flex;
     margin-bottom: 10px;
     div {
@@ -391,7 +415,7 @@ export const TeamCtn = styled.div`
   .title {
     font-weight: 700;
     font-size: 46px;
-    color: #b22c00;
+    color: #36B0FF;
     text-align: center;
   }
   .items {
@@ -409,26 +433,26 @@ export const StyledNode = styled.div`
   // padding: 5px;
   // border-radius: 8px;
   display: inline-block;
-  border: 1.9px solid #b22c00;
+  border: 1.9px solid #36B0FF;
   border-radius: 10px;
   width: 200px;
   font-size:20px;
   text-align:center;
   img{
-    border: 1px solid #b22c00;
+    border: 1px solid #36B0FF;
 	border-radius: 10px 10px 0px 0px; /*TL TR BR BL*/
 
-    background:red;
-    width:100%;
-    height:auto:
-    object-fit:cover;
+    background: #36B0FF;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
   }
   .role{
-    color:#b22c00;
+    color:#36B0FF;
     padding:10px;
 
     a{
-          color:#b22c00;
+          color:#36B0FF;
     }
   }
 
